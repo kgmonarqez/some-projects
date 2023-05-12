@@ -13,13 +13,13 @@ void InitBMIH(BITMAPINFOHEADER *BMIH, size_t W, size_t H){
     BMIH->Width = W;
     BMIH->Height = H;
     BMIH->Planes = 1;
-    BMIH->BitsPerPixelCount = sizeof(RGB)*8;
+    BMIH->BitsPerPixelCount = sizeof(RGB);
     BMIH->Compression = 0;
-    BMIH->ImageSize = sizeof(RGB)*W*H;
+    BMIH->ImageSize = 0;
     BMIH->xPixelsPerMeter = 4700;
     BMIH->yPixelsPerMeter = 4700;
-    BMIH->ColorTableSize = 1;
-    BMIH->ColorTableImportant = 1;
+    BMIH->ColorTableSize = 3;
+    BMIH->ColorTableImportant = 0;
 }
 
 void InitData(BMP *Image, size_t W, size_t H){
@@ -27,9 +27,15 @@ void InitData(BMP *Image, size_t W, size_t H){
     for(size_t y = 0; y < H; y++){
         Image->data[y] = (RGB*)malloc(sizeof(RGB)*W);
         for(size_t x = 0; x < W; x++){
-            Image->data[y][x].R = 255;
-            Image->data[y][x].G = 0;
-            Image->data[y][x].B = 0;
+            if(y < H/3){
+                painting(Image, (RGB){0, 0, 255}, x, y);
+            }
+            else if(y >= H/3 && y < H*2/3){
+                painting(Image, (RGB){255, 0, 0}, x, y);
+            }
+            else{
+                painting(Image, (RGB){255, 255, 255}, x, y);
+            }
         }
     }   
 }

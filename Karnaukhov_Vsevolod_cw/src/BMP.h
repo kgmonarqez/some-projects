@@ -7,6 +7,7 @@ typedef struct{
     unsigned char B;
     unsigned char G;
     unsigned char R;
+    unsigned char O;
 }RGB;
 
 typedef struct{
