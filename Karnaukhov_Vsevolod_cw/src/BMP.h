@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#pragma pack (push, 1)
-
-typedef struct{
-    unsigned char B;
-    unsigned char G;
-    unsigned char R;
-    unsigned char O;
-}RGB;
-
+#pragma pack(push, 1)
 typedef struct{
     unsigned short Signature;
     unsigned int FileSize;
@@ -17,6 +9,13 @@ typedef struct{
     unsigned short Reserved2;
     unsigned int FileOffsetToPixelArray;
 }BITMAPFILEHEADER;
+#pragma pack(pop)
+
+typedef struct{
+    unsigned char B;
+    unsigned char G;
+    unsigned char R;
+}RGB;
 
 typedef struct{
     unsigned int Size;
@@ -39,18 +38,18 @@ typedef struct{
 }BMP;
 
 typedef struct{
-    int x;
-    int y;
+    unsigned int x;
+    unsigned int y;
 }XoY;
 
-void InitBMFH(BITMAPFILEHEADER *BMFH, size_t W, size_t H);
-void InitBMIH(BITMAPINFOHEADER *BMIH, size_t W, size_t H);
-void InitData(BMP *Image, size_t W, size_t H);
-BMP InitBMP(size_t W, size_t H);
+void InitBMFH(BITMAPFILEHEADER *BMFH, unsigned int W, unsigned int H);
+void InitBMIH(BITMAPINFOHEADER *BMIH, unsigned int W, unsigned int H);
+void InitData(BMP *Image, unsigned int W, unsigned int H);
+BMP InitBMP(unsigned int W, unsigned int H);
 BMP OpenBMP(const char* path);
 void SaveBMP(const char * path, BMP Image);
 
-void painting(BMP *Image, RGB Color, size_t x, size_t y);
+void painting(BMP *Image, RGB Color, unsigned int x, unsigned int y);
 int RGBcmp(RGB color1, RGB color2);
 char *check_coordinates(BMP Image, XoY p2, XoY p4);
 BMP reflect(BMP Image, int axis, int dir, XoY p2, XoY p4, int security);

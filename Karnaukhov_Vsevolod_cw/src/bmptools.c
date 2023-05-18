@@ -1,6 +1,6 @@
 #include "BMP.h"
 
-void painting(BMP *Image, RGB Color, size_t x, size_t y){
+void painting(BMP *Image, RGB Color, unsigned int x, unsigned int y){
     //Applies RGB-data from Color to a pixel in array at (x, y)
     Image->data[y][x].R = Color.R;
     Image->data[y][x].G = Color.G;
