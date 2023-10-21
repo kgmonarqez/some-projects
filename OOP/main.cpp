@@ -6,7 +6,8 @@
 
 int main(){
     Player player{"kgmonarchez"};
-    Field *map = new Field();
-    delete map;
+    Field map = Field(10, 10);
+    Field copy = Field(std::move(map));
+    copy = std::move(map);
     return 0;
 }

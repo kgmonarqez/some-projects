@@ -9,19 +9,25 @@
 
 class Field{
 private:    
-    class Cell ***Map;
+    class Cell **Map;
     int Field_size_x;
     int Field_size_y;
     
-    Point Entrance;   
-    Point Exit;
-
+    Point Start;   
+    Point Destination;
 public:
     Field(int Input_field_size_x=DEFAULT_FIELD_SIZE_X, int Input_field_size_y=DEFAULT_FIELD_SIZE_Y);
+    Field(const Field& Copy);
+    Field(Field&& Move);
     ~Field();
+
+    Field& operator=(const Field& Copy);
+    Field& operator=(Field&& Move);
 
     int get_field_size_x();
     int get_field_size_y();
+
+    Cell& get_cell(int x, int y);
 
     bool check_passing(int x, int y);
 };

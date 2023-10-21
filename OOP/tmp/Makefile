@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named knife_and_wonders
+# Target rules for targets named hl3
 
 # Build rule for target.
-knife_and_wonders: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 knife_and_wonders
-.PHONY : knife_and_wonders
+hl3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hl3
+.PHONY : hl3
 
 # fast build rule for target.
-knife_and_wonders/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/build
-.PHONY : knife_and_wonders/fast
+hl3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/build
+.PHONY : hl3/fast
 
 Cell.o: Cell.cpp.o
 .PHONY : Cell.o
 
 # target to build an object file
 Cell.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Cell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Cell.cpp.o
 .PHONY : Cell.cpp.o
 
 Cell.i: Cell.cpp.i
@@ -142,7 +142,7 @@ Cell.i: Cell.cpp.i
 
 # target to preprocess a source file
 Cell.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Cell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Cell.cpp.i
 .PHONY : Cell.cpp.i
 
 Cell.s: Cell.cpp.s
@@ -150,7 +150,7 @@ Cell.s: Cell.cpp.s
 
 # target to generate assembly for a file
 Cell.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Cell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Cell.cpp.s
 .PHONY : Cell.cpp.s
 
 Field.o: Field.cpp.o
@@ -158,7 +158,7 @@ Field.o: Field.cpp.o
 
 # target to build an object file
 Field.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Field.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Field.cpp.o
 .PHONY : Field.cpp.o
 
 Field.i: Field.cpp.i
@@ -166,7 +166,7 @@ Field.i: Field.cpp.i
 
 # target to preprocess a source file
 Field.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Field.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Field.cpp.i
 .PHONY : Field.cpp.i
 
 Field.s: Field.cpp.s
@@ -174,7 +174,7 @@ Field.s: Field.cpp.s
 
 # target to generate assembly for a file
 Field.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Field.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Field.cpp.s
 .PHONY : Field.cpp.s
 
 Mechanics.o: Mechanics.cpp.o
@@ -182,7 +182,7 @@ Mechanics.o: Mechanics.cpp.o
 
 # target to build an object file
 Mechanics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Mechanics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Mechanics.cpp.o
 .PHONY : Mechanics.cpp.o
 
 Mechanics.i: Mechanics.cpp.i
@@ -190,7 +190,7 @@ Mechanics.i: Mechanics.cpp.i
 
 # target to preprocess a source file
 Mechanics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Mechanics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Mechanics.cpp.i
 .PHONY : Mechanics.cpp.i
 
 Mechanics.s: Mechanics.cpp.s
@@ -198,7 +198,7 @@ Mechanics.s: Mechanics.cpp.s
 
 # target to generate assembly for a file
 Mechanics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Mechanics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Mechanics.cpp.s
 .PHONY : Mechanics.cpp.s
 
 Player.o: Player.cpp.o
@@ -206,7 +206,7 @@ Player.o: Player.cpp.o
 
 # target to build an object file
 Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Player.cpp.o
 .PHONY : Player.cpp.o
 
 Player.i: Player.cpp.i
@@ -214,7 +214,7 @@ Player.i: Player.cpp.i
 
 # target to preprocess a source file
 Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Player.cpp.i
 .PHONY : Player.cpp.i
 
 Player.s: Player.cpp.s
@@ -222,7 +222,7 @@ Player.s: Player.cpp.s
 
 # target to generate assembly for a file
 Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
 Point.o: Point.cpp.o
@@ -230,7 +230,7 @@ Point.o: Point.cpp.o
 
 # target to build an object file
 Point.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Point.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Point.cpp.o
 .PHONY : Point.cpp.o
 
 Point.i: Point.cpp.i
@@ -238,7 +238,7 @@ Point.i: Point.cpp.i
 
 # target to preprocess a source file
 Point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Point.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Point.cpp.i
 .PHONY : Point.cpp.i
 
 Point.s: Point.cpp.s
@@ -246,7 +246,7 @@ Point.s: Point.cpp.s
 
 # target to generate assembly for a file
 Point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/Point.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
 main.o: main.cpp.o
@@ -254,7 +254,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -262,7 +262,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -270,7 +270,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knife_and_wonders.dir/build.make CMakeFiles/knife_and_wonders.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -281,7 +281,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... knife_and_wonders"
+	@echo "... hl3"
 	@echo "... Cell.o"
 	@echo "... Cell.i"
 	@echo "... Cell.s"

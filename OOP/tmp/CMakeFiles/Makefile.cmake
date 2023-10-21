@@ -43,5 +43,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/knife_and_wonders.dir/DependInfo.cmake"
+  "CMakeFiles/hl3.dir/DependInfo.cmake"
   )
