@@ -4,6 +4,11 @@ Teleport::Teleport(Point Input_destination){
     Destination = Input_destination;
 }
 
-void Teleport::action(Mechanics& Controller){
+bool Teleport::action(Mechanics& Controller){
     Controller.set_position(Destination);
+    return false;
+}
+
+Teleport* Teleport::copy(){
+    return new Teleport(*this);
 }

@@ -1,6 +1,12 @@
 #include "Mechanics.h"
 #include <iostream>
 
+void Mechanics::step(int x, int y){
+    Position.set_x(Position.get_x()+x);
+    Position.set_y(Position.get_y()+y);
+    event_activator();
+}
+
 Mechanics::Mechanics(Player &Bindable_entity, Field &Bindable_map) : Entity(Bindable_entity), Map(Bindable_map){
     Position = Map.get_start();
 }
@@ -8,27 +14,23 @@ Mechanics::Mechanics(Player &Bindable_entity, Field &Bindable_map) : Entity(Bind
 void Mechanics::movement(pathes Path){
     switch(Path){
         case pathes::left: 
-            if(Position.get_x()-1 >= 0 && Map.check_passing(Position.get_x(), Position.get_y())){
-                Position.set_x(Position.get_x()-1);
-                event_activator();
+            if(Position.get_x()-1 >= 0 && Map.check_passing(Position.get_x()-1, Position.get_y())){
+                step(-1, 0);
             }
             break;
         case pathes::right:
             if(Position.get_x()+1 < Map.get_field_size_x() && Map.check_passing(Position.get_x()+1, Position.get_y())){
-                Position.set_x(Position.get_x()+1);
-                event_activator();
+                step(1, 0);
             }
             break;
         case pathes::up: 
             if(Position.get_y()-1 < Map.get_field_size_y() && Map.check_passing(Position.get_x(), Position.get_y()-1)){
-                Position.set_y(Position.get_y()-1);
-                event_activator();
+                step(0, -1);
             }
             break;
         case pathes::down: 
             if(Position.get_y()+1 >= 0 && Map.check_passing(Position.get_x(), Position.get_y()+1)){
-                Position.set_y(Position.get_y()+1);
-                event_activator();
+                step(0, 1);
             }
             break;
     }
@@ -83,10 +85,12 @@ void Mechanics::scores_changing(int Scores_points){
 }
 
 void Mechanics::event_activator(){
-    Event* Current_event = Map.get_cell(Position.get_x(), Position.get_y()).get_event();
+    Cell& Current_cell = Map.get_cell(Position.get_x(), Position.get_y());
+    Event* Current_event = Current_cell.get_event();
     if(Current_event){
-        Current_event->action(*this);
-        delete Current_event;
+        if(Current_event->action(*this)){
+            Current_cell.set_event();
+        }
     }
 }
 

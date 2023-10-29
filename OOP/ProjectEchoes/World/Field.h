@@ -19,6 +19,8 @@ private:
     
     Point Start;   
     Point Destination;
+
+    void free_map();
 public:
     Field(int Input_field_size_x=DEFAULT_FIELD_SIZE_X, int Input_field_size_y=DEFAULT_FIELD_SIZE_Y);
     Field(const Field& Copy);

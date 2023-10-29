@@ -6,6 +6,7 @@
 #define DEFAULT_HP 100
 #define DEFAULT_SCORES 0
 #define DEFAULT_NAME "Player"
+#define DEFAULT_DAMAGE 20
 
 class Player{
 private:
@@ -14,6 +15,7 @@ private:
     int Scores;
     int Mana;
     int Speed;
+    int Damage;
 
 public:
     Player(std::string New_Nickname);
@@ -22,6 +24,7 @@ public:
     int get_mana();
     int get_speed();
     int get_scores();
+    int get_damage();
     std::string get_name();
 
     void set_name(std::string New_Nickname);
@@ -29,6 +32,7 @@ public:
     void set_mana(int New_Mana);
     void set_speed(int New_Speed);
     void set_scores(int New_Scores);
+    void set_damage(int New_Damage);
 
     bool check_hp();
     bool check_mana();

@@ -8,12 +8,10 @@
 #include "Events/Heal.h"
 #include "Events/Teleport.h"
 #include "World/Generator.h"
+#include "World/Level.h"
 
 int main(){
-    Player player = Player{"kgmonarchez"};
     Generator gen;
-    Field Map = gen.level_generator(2);
-    Mechanics Controller = Mechanics(player, Map);
-    std::cout << player.get_hp() << '\n';
+    Field Map = gen.level_select(1);
     return 0;
 }

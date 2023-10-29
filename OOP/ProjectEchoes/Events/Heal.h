@@ -5,5 +5,6 @@
 
 class Heal: public Event{
 public:
-    void action(Mechanics& Controller);
+    bool action(Mechanics& Controller);
+    Heal* copy();
 };

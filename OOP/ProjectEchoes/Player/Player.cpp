@@ -6,6 +6,7 @@ Player::Player(std::string New_Nickname=DEFAULT_NAME){
     set_scores(DEFAULT_SCORES);
     set_mana(DEFAULT_MANA);
     set_speed(DEFAULT_SPEED);
+    set_damage(DEFAULT_DAMAGE);
 }
 
 int Player::get_hp(){
@@ -28,6 +29,10 @@ std::string Player::get_name(){
     return Nickname;    
 }
 
+int Player::get_damage(){
+    return Damage;
+}
+
 void Player::set_name(std::string New_Nickname){
     Nickname = New_Nickname;
 }
@@ -46,6 +51,10 @@ void Player::set_speed(int New_Speed){
 
 void Player::set_scores(int New_Scores){
     Scores = New_Scores;
+}
+
+void Player::set_damage(int New_Damage){
+    Damage = New_Damage;
 }
 
 bool Player::check_hp(){

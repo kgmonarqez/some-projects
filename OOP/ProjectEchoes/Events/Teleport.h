@@ -9,5 +9,6 @@ private:
     Point Destination;
 public:
     Teleport(Point Input_destinaton);
-    void action(Mechanics& Controller);
+    bool action(Mechanics& Controller);
+    Teleport* copy();
 };

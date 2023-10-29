@@ -7,5 +7,6 @@ class Player;
 
 class Event{
 public:
-    virtual void action(Mechanics& Controller) = 0;
+    virtual bool action(Mechanics& Controller) = 0;
+    virtual Event* copy() = 0;
 };

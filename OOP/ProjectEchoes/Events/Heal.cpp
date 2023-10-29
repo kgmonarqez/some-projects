@@ -1,5 +1,10 @@
 #include "Heal.h"
 
-void Heal::action(Mechanics& Controller){
+bool Heal::action(Mechanics& Controller){
     Controller.healing(HEAL_POINTS);
+    return true;
+}
+
+Heal* Heal::copy(){
+    return new Heal(*this);
 }

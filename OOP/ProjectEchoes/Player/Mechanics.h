@@ -2,10 +2,14 @@
 #include "Player.h"
 #include "../World/Point.h"
 #include "../World/Field.h"
+#include "../World/Cell.h"
+#include "../Events/Event.h"
 
 class Player;
 class Point;
 class Field;
+class Cell;
+class Event;
 
 enum class pathes {right, left, up, down};
 
@@ -15,6 +19,8 @@ private:
     Player& Entity;
     Field& Map;
 
+    void step(int x, int y);
+    void event_activator();
 public:
     Mechanics(Player& Bindable_entity, Field& Bindable_map);
 
@@ -27,8 +33,6 @@ public:
     void mana_receiving(int Mana_points);
 
     void scores_changing(int Scores_points);
-
-    void event_activator();
 
     void set_position(Point New_position);
 };

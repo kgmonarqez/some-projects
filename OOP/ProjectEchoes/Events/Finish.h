@@ -2,5 +2,6 @@
 #include "Event.h"
 
 class Finish: public Event{
-    void action(Mechanics& Controller);
+    bool action(Mechanics& Controller);
+    Finish* copy();
 };

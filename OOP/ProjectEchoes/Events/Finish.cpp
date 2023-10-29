@@ -1,5 +1,9 @@
 #include "Finish.h"
 
-void Finish::action(Mechanics& Controller){
+bool Finish::action(Mechanics& Controller){
+    return true;
+}
 
+Finish* Finish::copy(){
+    return new Finish(*this);
 }
