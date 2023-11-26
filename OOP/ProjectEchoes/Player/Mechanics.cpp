@@ -1,13 +1,13 @@
 #include "Mechanics.h"
-#include <iostream>
 
 void Mechanics::step(int x, int y){
     Position.set_x(Position.get_x()+x);
     Position.set_y(Position.get_y()+y);
+    Current_watcher->update_position(Position);
     event_activator();
 }
 
-Mechanics::Mechanics(Player &Bindable_entity, Field &Bindable_map) : Entity(Bindable_entity), Map(Bindable_map){
+Mechanics::Mechanics(Player &Bindable_entity, Field &Bindable_map):Entity(Bindable_entity), Map(Bindable_map), Current_watcher(nullptr){
     Position = Map.get_start();
 }
 
@@ -34,7 +34,6 @@ void Mechanics::movement(pathes Path){
             }
             break;
     }
-    std::cout << Position.get_x() << ' ' << Position.get_y() << '\n';
 }
 
 void Mechanics::damage_receiving(int Damage){
@@ -88,6 +87,7 @@ void Mechanics::scores_changing(int Scores_points){
 void Mechanics::event_activator(){
     Cell& Current_cell = Map.get_cell(Position.get_x(), Position.get_y());
     Event* Current_event = Current_cell.get_event();
+    Current_watcher->update_event(Current_event);
     if(Current_event){
         if(Current_event->action(*this)){
             Current_cell.set_event();
@@ -97,6 +97,7 @@ void Mechanics::event_activator(){
 
 void Mechanics::set_position(Point New_position){
     Position = New_position;
+    Current_watcher->update_position(Position);
 }
 
 void Mechanics::player_restore(){
@@ -109,4 +110,13 @@ void Mechanics::player_restore(){
 
 bool Mechanics::is_finish(){
     return Position == Map.get_destination();
+}
+
+void Mechanics::set_watcher(Watcher* W){
+    if(Current_watcher){delete Current_watcher;}
+    Current_watcher = W;
+}
+
+Point Mechanics::get_position(){
+    return Position;
 }

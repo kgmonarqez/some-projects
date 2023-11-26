@@ -7,3 +7,7 @@ bool Finish::action(Mechanics& Controller){
 Finish* Finish::copy(){
     return new Finish(*this);
 }
+
+char Finish::get_representation(){
+    return 'F';
+}

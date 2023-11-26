@@ -1,18 +1,16 @@
 #pragma once
-#include <map>
-#include <iostream>
-#include <termios.h>
+#include <fstream>
+#include <filesystem>
 
-#include "../Commands/Command.h"
 #include "../Commands/Left.h"
 #include "../Commands/Right.h"
 #include "../Commands/Up.h"
 #include "../Commands/Down.h"
+#include "../Commands/Quit.h"
 
-enum class CommandNames{LEFT, RIGHT, UP, DOWN};
+enum class CommandNames{LEFT, RIGHT, UP, DOWN, QUIT};
 
 class ControlScheme{
 public:
-    virtual std::map<CommandNames, Command*> GetControlCommands() = 0;
-    virtual bool is_initialised() = 0;
+    virtual std::map<unsigned int, Command*> get_commands() = 0;
 };

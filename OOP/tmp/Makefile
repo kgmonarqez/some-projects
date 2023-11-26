@@ -297,6 +297,30 @@ ProjectEchoes/Game/Commands/Left.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Left.cpp.s
 .PHONY : ProjectEchoes/Game/Commands/Left.cpp.s
 
+ProjectEchoes/Game/Commands/Quit.o: ProjectEchoes/Game/Commands/Quit.cpp.o
+.PHONY : ProjectEchoes/Game/Commands/Quit.o
+
+# target to build an object file
+ProjectEchoes/Game/Commands/Quit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o
+.PHONY : ProjectEchoes/Game/Commands/Quit.cpp.o
+
+ProjectEchoes/Game/Commands/Quit.i: ProjectEchoes/Game/Commands/Quit.cpp.i
+.PHONY : ProjectEchoes/Game/Commands/Quit.i
+
+# target to preprocess a source file
+ProjectEchoes/Game/Commands/Quit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.i
+.PHONY : ProjectEchoes/Game/Commands/Quit.cpp.i
+
+ProjectEchoes/Game/Commands/Quit.s: ProjectEchoes/Game/Commands/Quit.cpp.s
+.PHONY : ProjectEchoes/Game/Commands/Quit.s
+
+# target to generate assembly for a file
+ProjectEchoes/Game/Commands/Quit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.s
+.PHONY : ProjectEchoes/Game/Commands/Quit.cpp.s
+
 ProjectEchoes/Game/Commands/Right.o: ProjectEchoes/Game/Commands/Right.cpp.o
 .PHONY : ProjectEchoes/Game/Commands/Right.o
 
@@ -345,101 +369,77 @@ ProjectEchoes/Game/Commands/Up.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Up.cpp.s
 .PHONY : ProjectEchoes/Game/Commands/Up.cpp.s
 
-ProjectEchoes/Game/ControlSchemes/DefaultControl.o: ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.o
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.o: ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.o
 
 # target to build an object file
-ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o
 
-ProjectEchoes/Game/ControlSchemes/DefaultControl.i: ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.i
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.i: ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.i
 
 # target to preprocess a source file
-ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i
 
-ProjectEchoes/Game/ControlSchemes/DefaultControl.s: ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.s
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.s: ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.s
 
 # target to generate assembly for a file
-ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s
+ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s
+.PHONY : ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s
 
-ProjectEchoes/Game/ControlSchemes/SettingsControl.o: ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.o
+ProjectEchoes/Game/Input/TerminalInput.o: ProjectEchoes/Game/Input/TerminalInput.cpp.o
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.o
 
 # target to build an object file
-ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o
+ProjectEchoes/Game/Input/TerminalInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.cpp.o
 
-ProjectEchoes/Game/ControlSchemes/SettingsControl.i: ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.i
+ProjectEchoes/Game/Input/TerminalInput.i: ProjectEchoes/Game/Input/TerminalInput.cpp.i
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.i
 
 # target to preprocess a source file
-ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i
+ProjectEchoes/Game/Input/TerminalInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.i
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.cpp.i
 
-ProjectEchoes/Game/ControlSchemes/SettingsControl.s: ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.s
+ProjectEchoes/Game/Input/TerminalInput.s: ProjectEchoes/Game/Input/TerminalInput.cpp.s
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.s
 
 # target to generate assembly for a file
-ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s
+ProjectEchoes/Game/Input/TerminalInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.s
+.PHONY : ProjectEchoes/Game/Input/TerminalInput.cpp.s
 
-ProjectEchoes/Game/ControlSchemes/TerminalControl.o: ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.o
+ProjectEchoes/Game/InputModelSetter.o: ProjectEchoes/Game/InputModelSetter.cpp.o
+.PHONY : ProjectEchoes/Game/InputModelSetter.o
 
 # target to build an object file
-ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o
+ProjectEchoes/Game/InputModelSetter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o
+.PHONY : ProjectEchoes/Game/InputModelSetter.cpp.o
 
-ProjectEchoes/Game/ControlSchemes/TerminalControl.i: ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.i
-
-# target to preprocess a source file
-ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i
-
-ProjectEchoes/Game/ControlSchemes/TerminalControl.s: ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.s
-
-# target to generate assembly for a file
-ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s
-.PHONY : ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s
-
-ProjectEchoes/Game/KeyboardInput.o: ProjectEchoes/Game/KeyboardInput.cpp.o
-.PHONY : ProjectEchoes/Game/KeyboardInput.o
-
-# target to build an object file
-ProjectEchoes/Game/KeyboardInput.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o
-.PHONY : ProjectEchoes/Game/KeyboardInput.cpp.o
-
-ProjectEchoes/Game/KeyboardInput.i: ProjectEchoes/Game/KeyboardInput.cpp.i
-.PHONY : ProjectEchoes/Game/KeyboardInput.i
+ProjectEchoes/Game/InputModelSetter.i: ProjectEchoes/Game/InputModelSetter.cpp.i
+.PHONY : ProjectEchoes/Game/InputModelSetter.i
 
 # target to preprocess a source file
-ProjectEchoes/Game/KeyboardInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.i
-.PHONY : ProjectEchoes/Game/KeyboardInput.cpp.i
+ProjectEchoes/Game/InputModelSetter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.i
+.PHONY : ProjectEchoes/Game/InputModelSetter.cpp.i
 
-ProjectEchoes/Game/KeyboardInput.s: ProjectEchoes/Game/KeyboardInput.cpp.s
-.PHONY : ProjectEchoes/Game/KeyboardInput.s
+ProjectEchoes/Game/InputModelSetter.s: ProjectEchoes/Game/InputModelSetter.cpp.s
+.PHONY : ProjectEchoes/Game/InputModelSetter.s
 
 # target to generate assembly for a file
-ProjectEchoes/Game/KeyboardInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.s
-.PHONY : ProjectEchoes/Game/KeyboardInput.cpp.s
+ProjectEchoes/Game/InputModelSetter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.s
+.PHONY : ProjectEchoes/Game/InputModelSetter.cpp.s
 
 ProjectEchoes/Game/Launcher.o: ProjectEchoes/Game/Launcher.cpp.o
 .PHONY : ProjectEchoes/Game/Launcher.o
@@ -464,6 +464,54 @@ ProjectEchoes/Game/Launcher.s: ProjectEchoes/Game/Launcher.cpp.s
 ProjectEchoes/Game/Launcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Launcher.cpp.s
 .PHONY : ProjectEchoes/Game/Launcher.cpp.s
+
+ProjectEchoes/Game/Rendering/CLIRenderer.o: ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.o
+
+# target to build an object file
+ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o
+
+ProjectEchoes/Game/Rendering/CLIRenderer.i: ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.i
+
+# target to preprocess a source file
+ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i
+
+ProjectEchoes/Game/Rendering/CLIRenderer.s: ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.s
+
+# target to generate assembly for a file
+ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s
+.PHONY : ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s
+
+ProjectEchoes/Game/Rendering/Watcher.o: ProjectEchoes/Game/Rendering/Watcher.cpp.o
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.o
+
+# target to build an object file
+ProjectEchoes/Game/Rendering/Watcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.cpp.o
+
+ProjectEchoes/Game/Rendering/Watcher.i: ProjectEchoes/Game/Rendering/Watcher.cpp.i
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.i
+
+# target to preprocess a source file
+ProjectEchoes/Game/Rendering/Watcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.i
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.cpp.i
+
+ProjectEchoes/Game/Rendering/Watcher.s: ProjectEchoes/Game/Rendering/Watcher.cpp.s
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.s
+
+# target to generate assembly for a file
+ProjectEchoes/Game/Rendering/Watcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hl3.dir/build.make CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.s
+.PHONY : ProjectEchoes/Game/Rendering/Watcher.cpp.s
 
 ProjectEchoes/Player/Mechanics.o: ProjectEchoes/Player/Mechanics.cpp.o
 .PHONY : ProjectEchoes/Player/Mechanics.o
@@ -711,27 +759,33 @@ help:
 	@echo "... ProjectEchoes/Game/Commands/Left.o"
 	@echo "... ProjectEchoes/Game/Commands/Left.i"
 	@echo "... ProjectEchoes/Game/Commands/Left.s"
+	@echo "... ProjectEchoes/Game/Commands/Quit.o"
+	@echo "... ProjectEchoes/Game/Commands/Quit.i"
+	@echo "... ProjectEchoes/Game/Commands/Quit.s"
 	@echo "... ProjectEchoes/Game/Commands/Right.o"
 	@echo "... ProjectEchoes/Game/Commands/Right.i"
 	@echo "... ProjectEchoes/Game/Commands/Right.s"
 	@echo "... ProjectEchoes/Game/Commands/Up.o"
 	@echo "... ProjectEchoes/Game/Commands/Up.i"
 	@echo "... ProjectEchoes/Game/Commands/Up.s"
-	@echo "... ProjectEchoes/Game/ControlSchemes/DefaultControl.o"
-	@echo "... ProjectEchoes/Game/ControlSchemes/DefaultControl.i"
-	@echo "... ProjectEchoes/Game/ControlSchemes/DefaultControl.s"
-	@echo "... ProjectEchoes/Game/ControlSchemes/SettingsControl.o"
-	@echo "... ProjectEchoes/Game/ControlSchemes/SettingsControl.i"
-	@echo "... ProjectEchoes/Game/ControlSchemes/SettingsControl.s"
-	@echo "... ProjectEchoes/Game/ControlSchemes/TerminalControl.o"
-	@echo "... ProjectEchoes/Game/ControlSchemes/TerminalControl.i"
-	@echo "... ProjectEchoes/Game/ControlSchemes/TerminalControl.s"
-	@echo "... ProjectEchoes/Game/KeyboardInput.o"
-	@echo "... ProjectEchoes/Game/KeyboardInput.i"
-	@echo "... ProjectEchoes/Game/KeyboardInput.s"
+	@echo "... ProjectEchoes/Game/ControlSchemes/KeyboardControl.o"
+	@echo "... ProjectEchoes/Game/ControlSchemes/KeyboardControl.i"
+	@echo "... ProjectEchoes/Game/ControlSchemes/KeyboardControl.s"
+	@echo "... ProjectEchoes/Game/Input/TerminalInput.o"
+	@echo "... ProjectEchoes/Game/Input/TerminalInput.i"
+	@echo "... ProjectEchoes/Game/Input/TerminalInput.s"
+	@echo "... ProjectEchoes/Game/InputModelSetter.o"
+	@echo "... ProjectEchoes/Game/InputModelSetter.i"
+	@echo "... ProjectEchoes/Game/InputModelSetter.s"
 	@echo "... ProjectEchoes/Game/Launcher.o"
 	@echo "... ProjectEchoes/Game/Launcher.i"
 	@echo "... ProjectEchoes/Game/Launcher.s"
+	@echo "... ProjectEchoes/Game/Rendering/CLIRenderer.o"
+	@echo "... ProjectEchoes/Game/Rendering/CLIRenderer.i"
+	@echo "... ProjectEchoes/Game/Rendering/CLIRenderer.s"
+	@echo "... ProjectEchoes/Game/Rendering/Watcher.o"
+	@echo "... ProjectEchoes/Game/Rendering/Watcher.i"
+	@echo "... ProjectEchoes/Game/Rendering/Watcher.s"
 	@echo "... ProjectEchoes/Player/Mechanics.o"
 	@echo "... ProjectEchoes/Player/Mechanics.i"
 	@echo "... ProjectEchoes/Player/Mechanics.s"

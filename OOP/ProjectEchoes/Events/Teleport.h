@@ -1,8 +1,9 @@
-#pragma once
+#ifndef TELEPORT_H
+#define TELEPORT_H
 #include "Event.h"
 #include "../World/Point.h"
 
-class Point;
+class Mechanics;
 
 class Teleport: public Event{
 private:
@@ -11,4 +12,6 @@ public:
     Teleport(Point Input_destinaton);
     bool action(Mechanics& Controller);
     Teleport* copy();
+    char get_representation();
 };
+#endif

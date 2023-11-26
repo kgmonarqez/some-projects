@@ -19,7 +19,6 @@ Field Generator::level_generator(std::string Level_path){
     setting_events(Map, This_level);
     setting_portals(Map, This_level);
 
-    std::cout << "succesful!\n";
     return Map;
 }
 

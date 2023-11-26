@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CELL_H
+#define CELL_H
 #include "../Events/Event.h"
 
 class Event;
@@ -22,3 +23,4 @@ public:
     bool get_passing();
     Event* get_event();
 };
+#endif

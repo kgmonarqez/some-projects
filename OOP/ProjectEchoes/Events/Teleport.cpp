@@ -12,3 +12,7 @@ bool Teleport::action(Mechanics& Controller){
 Teleport* Teleport::copy(){
     return new Teleport(*this);
 }
+
+char Teleport::get_representation(){
+    return '0';
+}

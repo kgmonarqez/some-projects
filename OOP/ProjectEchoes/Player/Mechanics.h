@@ -1,9 +1,11 @@
-#pragma once
+#ifndef MECHANICS_H
+#define MECHANICS_H
 #include "Player.h"
 #include "../World/Point.h"
 #include "../World/Field.h"
 #include "../World/Cell.h"
 #include "../Events/Event.h"
+#include "../Game/Rendering/Watcher.h"
 
 enum class pathes {RIGHT, LEFT, UP, DOWN};
 
@@ -12,13 +14,14 @@ class Point;
 class Field;
 class Cell;
 class Event;
-
+class Watcher;
 
 class Mechanics{
 private:
     Point Position;
     Player& Entity;
     Field& Map;
+    Watcher* Current_watcher;
 
     void step(int x, int y);
     void event_activator();
@@ -40,4 +43,8 @@ public:
     void player_restore();
 
     bool is_finish();
+
+    void set_watcher(Watcher* W);
+    Point get_position();
 };
+#endif

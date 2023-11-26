@@ -178,7 +178,16 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Launcher.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../World/Point.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../World/Field.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../World/Cell.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Events/Event.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Game/Rendering/Watcher.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Game/Rendering/../../World/Field.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Game/Rendering/CLIRenderer.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Game/Rendering/Renderer.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/../Player/../Game/Rendering/../../Player/Mechanics.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/SpikeDamage.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/Event.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/Heal.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/Teleport.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/../Events/Finish.h \
@@ -206,27 +215,20 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Launcher.cpp.o: \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/Portal.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/KeyboardInput.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/SettingsControl.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/ControlScheme.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/../World/Field.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/TerminalInput.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/Input.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h /usr/include/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/../Commands/Command.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/../Commands/Left.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/../Commands/Right.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/../Commands/Up.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/../Commands/Down.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/TerminalControl.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/DefaultControl.h
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/KeyboardControl.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/ControlScheme.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Left.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Command.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/../../Player/Mechanics.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Right.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Up.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Down.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/../ControlSchemes/../Commands/Quit.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/InputModelSetter.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/Watcher.h

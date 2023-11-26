@@ -1,16 +1,28 @@
 #include "Launcher.h"
 
-Launcher::Launcher(){
+Launcher::Launcher():InputModel(nullptr){}
+
+void Launcher::run(){
+    InputModelSetter IMS;
+    InputModel = IMS.set_input_model();
+
+    Watcher* W = new Watcher;
+    
     Generator Gen;
     std::cout << "Select level: ";
-    int Current_level_num = std::atoi(KI.console().c_str());
+    std::string tmp;
+    std::getline(std::cin, tmp);
+    int Current_level_num = std::atoi(tmp.c_str());
+    
     Field Map = Gen.level_select(Current_level_num);
     Player User{};
     Mechanics Controller{User, Map};
-    std::cout << "Level " << Current_level_num << '\n';
-    std::string tmp = KI.console();
-    while(tmp != "quit"){
-        KI.action(tmp, Controller);
+    W->update_position(Controller.get_position());
+    Controller.set_watcher(W);
+
+    Command* Current_command = nullptr;
+    while(!dynamic_cast<Quit*>(Current_command)){
+        if(Current_command){Current_command->action(Controller);}
         if(!User.check_hp() && !ask_for_replay()){
             break;
         }
@@ -24,16 +36,17 @@ Launcher::Launcher(){
                 break;
             }
         }
-        tmp = KI.console();
+        W->call_renderer(Map, User);
+        Current_command = InputModel->get_command();
     }
 }
 
 bool Launcher::ask_for_replay(){
     std::cout << "Continue?\n[Y/Yes, N/No]: ";
     std::string tmp;
+    std::getline(std::cin, tmp);
     bool res;
     while(tmp != "Y" && tmp != "Yes" && tmp != "N" && tmp != "No"){
-        tmp = KI.console();
         if(tmp == "Y" || tmp == "Yes"){
             res = true;
         }
@@ -41,9 +54,8 @@ bool Launcher::ask_for_replay(){
             res = false;
         }
         else{
-            tmp = KI.console();
+            std::getline(std::cin, tmp);
         }
     }
     return res;
 }
-//std::cout << "\x1B[2J\x1B[H";

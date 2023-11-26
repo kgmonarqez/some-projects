@@ -153,10 +153,24 @@ CMakeFiles/hl3.dir/ProjectEchoes/World/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/World/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/World/Point.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/World/Point.cpp.s
 
+CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: ../ProjectEchoes/World/Generator.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp
+
+CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp > CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i
+
+CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s
+
 CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o: CMakeFiles/hl3.dir/flags.make
 CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o: ../ProjectEchoes/Events/SpikeDamage.cpp
 CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Events/SpikeDamage.cpp
 
 CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.s: cmake_force
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o: CMakeFiles/hl3.dir/flags.make
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o: ../ProjectEchoes/Events/Heal.cpp
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Events/Heal.cpp
 
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.s: cmake_force
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o: CMakeFiles/hl3.dir/flags.make
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o: ../ProjectEchoes/Events/Teleport.cpp
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Events/Teleport.cpp
 
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.i: cmake_force
@@ -194,20 +208,6 @@ CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.i: cmake_force
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Events/Teleport.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.s
-
-CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: CMakeFiles/hl3.dir/flags.make
-CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: ../ProjectEchoes/World/Generator.cpp
-CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp
-
-CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp > CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.i
-
-CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/World/Generator.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.s
 
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Finish.cpp.o: CMakeFiles/hl3.dir/flags.make
 CMakeFiles/hl3.dir/ProjectEchoes/Events/Finish.cpp.o: ../ProjectEchoes/Events/Finish.cpp
@@ -335,61 +335,89 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Down.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Down.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/Commands/Down.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Down.cpp.s
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o: CMakeFiles/hl3.dir/flags.make
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o: ../ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o: ../ProjectEchoes/Game/Commands/Quit.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/Commands/Quit.cpp
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.i
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/Commands/Quit.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.i
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.s
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/Commands/Quit.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.s
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o: CMakeFiles/hl3.dir/flags.make
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o: ../ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o: ../ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.i
+CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.i
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.s
+CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.s
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o: CMakeFiles/hl3.dir/flags.make
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o: ../ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o: ../ProjectEchoes/Game/Input/TerminalInput.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/TerminalInput.cpp
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.i
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/TerminalInput.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.i
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.s
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/Input/TerminalInput.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.s
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o: CMakeFiles/hl3.dir/flags.make
-CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o: ../ProjectEchoes/Game/KeyboardInput.cpp
-CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/KeyboardInput.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o: ../ProjectEchoes/Game/InputModelSetter.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/InputModelSetter.cpp
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/KeyboardInput.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.i
+CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/InputModelSetter.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.i
 
-CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/KeyboardInput.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.s
+CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/InputModelSetter.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.s
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o: ../ProjectEchoes/Game/Rendering/Watcher.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/Watcher.cpp
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/Watcher.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.i
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/Watcher.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.s
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o: CMakeFiles/hl3.dir/flags.make
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o: ../ProjectEchoes/Game/Rendering/CLIRenderer.cpp
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o: CMakeFiles/hl3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o -MF CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o.d -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o -c /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/CLIRenderer.cpp
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/CLIRenderer.cpp > CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.i
+
+CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/CLIRenderer.cpp -o CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.s
 
 # Object files for target hl3
 hl3_OBJECTS = \
@@ -399,10 +427,10 @@ hl3_OBJECTS = \
 "CMakeFiles/hl3.dir/ProjectEchoes/World/Cell.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/World/Field.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/World/Point.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o" \
-"CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Events/Finish.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Events/MapUpdate.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/World/Level.cpp.o" \
@@ -412,10 +440,12 @@ hl3_OBJECTS = \
 "CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Right.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Up.cpp.o" \
 "CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Down.cpp.o" \
-"CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o" \
-"CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o" \
-"CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o" \
-"CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o"
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o" \
+"CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o"
 
 # External object files for target hl3
 hl3_EXTERNAL_OBJECTS =
@@ -426,10 +456,10 @@ hl3: CMakeFiles/hl3.dir/ProjectEchoes/Player/Mechanics.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Cell.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Field.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Point.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Events/SpikeDamage.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Events/Heal.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Events/Teleport.cpp.o
-hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Generator.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Events/Finish.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Events/MapUpdate.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/World/Level.cpp.o
@@ -439,13 +469,15 @@ hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Left.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Right.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Up.cpp.o
 hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Down.cpp.o
-hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/DefaultControl.cpp.o
-hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/TerminalControl.cpp.o
-hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/SettingsControl.cpp.o
-hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/KeyboardInput.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Commands/Quit.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/ControlSchemes/KeyboardControl.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Input/TerminalInput.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/InputModelSetter.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o
+hl3: CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o
 hl3: CMakeFiles/hl3.dir/build.make
 hl3: CMakeFiles/hl3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable hl3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/b4ll3r1um/OOP/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable hl3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hl3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

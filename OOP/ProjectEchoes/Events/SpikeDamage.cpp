@@ -8,3 +8,7 @@ bool SpikeDamage::action(Mechanics& Controller){
 SpikeDamage* SpikeDamage::copy(){
     return new SpikeDamage(*this);
 }
+
+char SpikeDamage::get_representation(){
+    return 'x';
+}

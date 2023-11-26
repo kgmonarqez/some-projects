@@ -177,4 +177,12 @@ CMakeFiles/hl3.dir/ProjectEchoes/Player/Mechanics.cpp.o: \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Player/../World/Cell.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Player/../World/../Events/Event.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../World/../Events/Event.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../World/../Events/../Player/Mechanics.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../World/Cell.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Events/Event.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Game/Rendering/Watcher.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Game/Rendering/../../World/Field.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Game/Rendering/CLIRenderer.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Game/Rendering/Renderer.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Player/../Game/Rendering/../../Player/Mechanics.h

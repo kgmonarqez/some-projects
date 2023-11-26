@@ -1,4 +1,5 @@
-#pragma once
+#ifndef FIELD_H
+#define FIELD_H
 #include <algorithm>
 #include "Cell.h"
 #include "Point.h"
@@ -42,3 +43,4 @@ public:
     void set_start(Point New_start);
     void set_destination(Point New_destination);
 };
+#endif
