@@ -16,6 +16,10 @@ void CLIRenderer::render(Field& Map, Player& Entity, Point Position){
             std::cout << '\n';
         }
         std::cout << "HP: " << Entity.get_hp() << '\n'; 
+        std::cout << "Position: " << '(' << Position.get_x() << ';' << Position.get_y() << ")\n";
+    }
+    else{
+        std::cout << "Continue?\n[Y/Yes, N/No]: ";
     }
 }
 

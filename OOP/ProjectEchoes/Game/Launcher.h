@@ -11,6 +11,7 @@
 class Launcher{
 private:
     Input* InputModel;
+    Watcher* W;
 
     bool ask_for_replay();
 public:

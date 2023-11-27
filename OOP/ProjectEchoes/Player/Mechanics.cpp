@@ -105,7 +105,7 @@ void Mechanics::player_restore(){
     Entity.set_scores(DEFAULT_SCORES);
     Entity.set_mana(DEFAULT_MANA);
     Entity.set_speed(DEFAULT_SPEED);
-    Entity.set_damage(DEFAULT_DAMAGE);;
+    Entity.set_damage(DEFAULT_DAMAGE);
 }
 
 bool Mechanics::is_finish(){

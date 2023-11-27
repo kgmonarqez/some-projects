@@ -1,12 +1,10 @@
 #include "Launcher.h"
 
-Launcher::Launcher():InputModel(nullptr){}
+Launcher::Launcher():InputModel(nullptr), W(new Watcher){}
 
 void Launcher::run(){
     InputModelSetter IMS;
     InputModel = IMS.set_input_model();
-
-    Watcher* W = new Watcher;
     
     Generator Gen;
     std::cout << "Select level: ";
@@ -23,8 +21,16 @@ void Launcher::run(){
     Command* Current_command = nullptr;
     while(!dynamic_cast<Quit*>(Current_command)){
         if(Current_command){Current_command->action(Controller);}
-        if(!User.check_hp() && !ask_for_replay()){
-            break;
+        if(!User.check_hp()){
+            W->call_renderer(Map, User);
+            if(!ask_for_replay()){
+                break;
+            }
+            else{
+                Map = Gen.level_select(Current_level_num);
+                Controller.player_restore();
+                Controller.set_position(Map.get_start());
+            }
         }
         if(Controller.is_finish()){
             if(Current_level_num + 1 <= LAST_LEVEL_NUM){
@@ -42,10 +48,9 @@ void Launcher::run(){
 }
 
 bool Launcher::ask_for_replay(){
-    std::cout << "Continue?\n[Y/Yes, N/No]: ";
     std::string tmp;
     std::getline(std::cin, tmp);
-    bool res;
+    bool res = true;
     while(tmp != "Y" && tmp != "Yes" && tmp != "N" && tmp != "No"){
         if(tmp == "Y" || tmp == "Yes"){
             res = true;
