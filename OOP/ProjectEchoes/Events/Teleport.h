@@ -12,6 +12,5 @@ public:
     Teleport(Point Input_destinaton);
     bool action(Mechanics& Controller);
     Teleport* copy();
-    char get_representation();
 };
 #endif

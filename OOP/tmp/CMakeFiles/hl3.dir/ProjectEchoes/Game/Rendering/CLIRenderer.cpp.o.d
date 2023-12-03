@@ -184,4 +184,9 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o: \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../World/../Events/../Player/../Game/Rendering/Watcher.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../World/../Events/../Player/../Game/Rendering/../../World/Field.h \
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../World/../Events/../Player/../Game/Rendering/CLIRenderer.h \
- /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Player/Mechanics.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Player/Mechanics.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Events/Heal.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Events/Event.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Events/SpikeDamage.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Events/Teleport.h \
+ /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/../../Events/Finish.h

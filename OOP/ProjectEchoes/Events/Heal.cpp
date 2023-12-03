@@ -8,7 +8,3 @@ bool Heal::action(Mechanics& Controller){
 Heal* Heal::copy(){
     return new Heal(*this);
 }
-
-char Heal::get_representation(){
-    return 'H';
-}

@@ -3605,6 +3605,11 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o
  /home/b4ll3r1um/OOP/ProjectEchoes/World/Field.h
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/CLIRenderer.h
  /home/b4ll3r1um/OOP/ProjectEchoes/Player/Mechanics.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Events/Heal.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Events/Event.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Events/SpikeDamage.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Events/Teleport.h
+ /home/b4ll3r1um/OOP/ProjectEchoes/Events/Finish.h
 
 CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o
  /home/b4ll3r1um/OOP/ProjectEchoes/Game/Rendering/Watcher.cpp

@@ -50,7 +50,7 @@ void Launcher::run(){
 bool Launcher::ask_for_replay(){
     std::string tmp;
     std::getline(std::cin, tmp);
-    bool res = true;
+    bool res;
     while(tmp != "Y" && tmp != "Yes" && tmp != "N" && tmp != "No"){
         if(tmp == "Y" || tmp == "Yes"){
             res = true;

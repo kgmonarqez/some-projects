@@ -3589,7 +3589,12 @@ CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/CLIRenderer.cpp.o: ../ProjectEch
   ../ProjectEchoes/Game/Rendering/Watcher.h \
   ../ProjectEchoes/World/Field.h \
   ../ProjectEchoes/Game/Rendering/CLIRenderer.h \
-  ../ProjectEchoes/Player/Mechanics.h
+  ../ProjectEchoes/Player/Mechanics.h \
+  ../ProjectEchoes/Events/Heal.h \
+  ../ProjectEchoes/Events/Event.h \
+  ../ProjectEchoes/Events/SpikeDamage.h \
+  ../ProjectEchoes/Events/Teleport.h \
+  ../ProjectEchoes/Events/Finish.h
 
 CMakeFiles/hl3.dir/ProjectEchoes/Game/Rendering/Watcher.cpp.o: ../ProjectEchoes/Game/Rendering/Watcher.cpp \
   /usr/include/stdc-predef.h \

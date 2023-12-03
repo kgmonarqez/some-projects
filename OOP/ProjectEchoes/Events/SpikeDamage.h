@@ -10,6 +10,5 @@ class SpikeDamage: public Event{
 public:
     bool action(Mechanics& Controller);
     SpikeDamage* copy();
-    char get_representation();
 };
 #endif

@@ -2,9 +2,6 @@
 #define CLIRENDERER_H
 #include "Renderer.h"
 #include "../../Player/Mechanics.h"
-/*#include "../../Events/Heal.h"
-#include "../../Events/SpikeDamage.h"
-#include "../../Events/Teleport.h"*/
 
 class Cell;
 class Event;
