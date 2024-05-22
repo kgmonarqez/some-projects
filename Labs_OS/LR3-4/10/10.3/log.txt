@@ -1,0 +1,10 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.3$ sudo ./father
+Process 1 created: pid=40406, ppid=40405
+Process 2 created: pid=40407, ppid=40406
+Process 3 created: pid=40408, ppid=40407
+Process 4 created: pid=40409, ppid=40408
+Termination: process 4
+Termination: process 2
+Termination: process 3
+Termination: process 1
+

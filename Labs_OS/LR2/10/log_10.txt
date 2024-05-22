@@ -1,0 +1,49 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 8
+-rwx--x--x 1 b4ll3r1um b4ll3r1um  66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 331 мар  4 14:43 modBridge.c
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ sudo chown someuser ForbiddenForReading.txt 
+sudo: /etc/sudoers: Not a directory
+[sudo] password for b4ll3r1um: 
+Sorry, try again.
+[sudo] password for b4ll3r1um: 
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 8
+-rwx--x--x 1 someuser  b4ll3r1um  66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 331 мар  4 14:43 modBridge.c
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ gcc -o src modBridge.c 
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 24
+-rwx--x--x 1 someuser  b4ll3r1um    66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   331 мар  4 14:43 modBridge.c
+-rwxrwxr-x 1 b4ll3r1um b4ll3r1um 16144 апр 23 18:55 src
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ chmod u+s src
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ sudo chown someuser src
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 24
+-rwx--xr-x 1 someuser  b4ll3r1um    66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   331 мар  4 14:43 modBridge.c
+-rwxrwxr-x 1 someuser  b4ll3r1um 16144 апр 23 18:55 src
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ sudo chmod u+s src
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 24
+-rwx-wx-wx 1 someuser  b4ll3r1um    66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   331 мар  4 14:43 modBridge.c
+-rwsrwxr-x 1 someuser  b4ll3r1um 16144 апр 23 18:55 src
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ cat ForbiddenForReading.txt 
+cat: ForbiddenForReading.txt: Permission denied
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ./src ForbiddenForReading.txt 
+Кто прочитал тот арбуз
+Или картошка
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ sudo chmod u-s src
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ls -l
+total 24
+-rwx-wx-wx 1 someuser  b4ll3r1um    66 мар  4 14:02 ForbiddenForReading.txt
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   331 мар  4 14:43 modBridge.c
+-rwxrwxr-x 1 someuser  b4ll3r1um 16144 апр 23 18:55 src
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ ./src ForbiddenForReading.txt 
+Couldn't find or open file
+b4ll3r1um@Linex:~/Labs_OS/LR2/10$ 

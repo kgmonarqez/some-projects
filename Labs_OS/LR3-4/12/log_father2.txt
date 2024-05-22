@@ -1,0 +1,8 @@
+son file descriptor = 3
+son params: pid=45023 ppid=45022
+pid = 45023: H
+son file descriptor = 3
+son params: pid=45024 ppid=45022
+pid = 45024: E
+Process pid = 45023 completed
+Process pid = 45024 completed

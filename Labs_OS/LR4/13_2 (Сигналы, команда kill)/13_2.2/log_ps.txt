@@ -1,0 +1,15 @@
+    PID TTY          TIME CMD
+   3794 pts/0    00:00:00 bash
+   4746 pts/0    00:00:00 father
+   4747 pts/0    00:00:00 son1
+   4748 pts/0    00:00:00 son2
+   4749 pts/0    00:00:00 sh
+   4750 pts/0    00:00:00 ps
+
+    PID TTY          TIME CMD
+   3794 pts/0    00:00:00 bash
+   4746 pts/0    00:00:00 father
+   4747 pts/0    00:00:00 son1 <defunct>
+   4748 pts/0    00:00:00 son2 <defunct>
+   4751 pts/0    00:00:00 sh
+   4752 pts/0    00:00:00 ps

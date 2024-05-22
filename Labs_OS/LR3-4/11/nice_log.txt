@@ -1,0 +1,8 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/11$ ./nice
+FATHER PARAMS: pid=44584  ppid=10347
+Nice value = 19
+SCHED_SETSCHEDULER_1: Operation not permitted
+Квант при циклическом планировании: 0 сек 20000000 нс
+SON: Квант процессорного времени: 0 сек 20000000 нс
+Процесс с pid = 44585 завершен
+

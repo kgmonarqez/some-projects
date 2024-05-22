@@ -1,0 +1,11 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/8$ ./piper info.txt recievedMessage.txt
+Pipe created
+-----Pipe output every 100 symbols at every string-----
+Computer science, 
+the study of computers and computing, 
+including their theoretical and algorithmi
+c foundations, 
+hardware and software, 
+and their uses for processing information. 
+
+b4ll3r1um@Linex:~/Labs_OS/LR6/8$ 

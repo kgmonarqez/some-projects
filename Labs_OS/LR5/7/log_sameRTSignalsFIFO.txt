@@ -1,0 +1,16 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/7$ ./sameRT
+pid 27592's current affinity mask: ff
+pid 27592's new affinity mask: 1
+SIGRTMAX started
+Signals sent, 3 seconds pause
+SIGRTMIN+1 №1
+SIGRTMIN+1 №2
+SIGRTMIN+1 №3
+SIGRTMIN+1 №4
+SIGRTMIN+1 №5
+SIGRTMIN+1 №6
+SIGRTMIN+1 №7
+SIGRTMIN+1 №8
+SIGRTMIN+1 №9
+SIGRTMIN+1 №10
+b4ll3r1um@Linex:~/Labs_OS/LR5/7$

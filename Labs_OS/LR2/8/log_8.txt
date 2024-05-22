@@ -1,0 +1,118 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:113:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:116::/run/uuidd:/usr/sbin/nologin
+systemd-oom:x:108:117:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+tcpdump:x:109:118::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+rtkit:x:116:123:RealtimeKit,,,:/proc:/usr/sbin/nologin
+whoopsie:x:117:124::/nonexistent:/bin/false
+sssd:x:118:125:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+fwupd-refresh:x:120:126:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+nm-openvpn:x:121:127:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+saned:x:122:129::/var/lib/saned:/usr/sbin/nologin
+colord:x:123:130:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:124:131::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:125:132:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:127:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:128:134:Gnome Display Manager:/var/lib/gdm3:/bin/false
+b4ll3r1um:x:1000:1000:b4ll3r1um,,,:/home/b4ll3r1um:/bin/bash
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ ls -l /etc/passwd
+-rw-r--r-- 1 root root 2944 апр 17 22:28 /etc/passwd
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ ls -l /etc/shadow
+-rw-r----- 1 root shadow 1562 апр 17 22:28 /etc/shadow
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ sudo cat /etc/shadow
+sudo: /etc/sudoers: Not a directory
+root:$y$j9T$tTAaSvl9n65tYSlt0WKaM/$eEvqgEEpa482b5D6vkCH4R.TmlwKvt/8SKgdj2f/WgD:19830:0:99999:7:::
+daemon:*:19773:0:99999:7:::
+bin:*:19773:0:99999:7:::
+sys:*:19773:0:99999:7:::
+sync:*:19773:0:99999:7:::
+games:*:19773:0:99999:7:::
+man:*:19773:0:99999:7:::
+lp:*:19773:0:99999:7:::
+mail:*:19773:0:99999:7:::
+news:*:19773:0:99999:7:::
+uucp:*:19773:0:99999:7:::
+proxy:*:19773:0:99999:7:::
+www-data:*:19773:0:99999:7:::
+backup:*:19773:0:99999:7:::
+list:*:19773:0:99999:7:::
+irc:*:19773:0:99999:7:::
+gnats:*:19773:0:99999:7:::
+nobody:*:19773:0:99999:7:::
+systemd-network:*:19773:0:99999:7:::
+systemd-resolve:*:19773:0:99999:7:::
+messagebus:*:19773:0:99999:7:::
+systemd-timesync:*:19773:0:99999:7:::
+syslog:*:19773:0:99999:7:::
+_apt:*:19773:0:99999:7:::
+tss:*:19773:0:99999:7:::
+uuidd:*:19773:0:99999:7:::
+systemd-oom:*:19773:0:99999:7:::
+tcpdump:*:19773:0:99999:7:::
+avahi-autoipd:*:19773:0:99999:7:::
+usbmux:*:19773:0:99999:7:::
+dnsmasq:*:19773:0:99999:7:::
+kernoops:*:19773:0:99999:7:::
+avahi:*:19773:0:99999:7:::
+cups-pk-helper:*:19773:0:99999:7:::
+rtkit:*:19773:0:99999:7:::
+whoopsie:*:19773:0:99999:7:::
+sssd:*:19773:0:99999:7:::
+speech-dispatcher:!:19773:0:99999:7:::
+fwupd-refresh:*:19773:0:99999:7:::
+nm-openvpn:*:19773:0:99999:7:::
+saned:*:19773:0:99999:7:::
+colord:*:19773:0:99999:7:::
+geoclue:*:19773:0:99999:7:::
+pulse:*:19773:0:99999:7:::
+gnome-initial-setup:*:19773:0:99999:7:::
+hplip:*:19773:0:99999:7:::
+gdm:*:19773:0:99999:7:::
+b4ll3r1um:$y$j9T$a/sUQkBzqPquNUln8BU6w/$owCzGOJykjnHKMMcUcreBrFeRhNWAIpalPSL3dolPz5:19830:0:99999:7:::
+vboxadd:!:19830::::::
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ /usr/bin/passwd
+Changing password for b4ll3r1um.
+Current password: 
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+New password: 
+Retype new password: 
+passwd: password updated successfully
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$ ls -l /usr/bin/passwd
+-rwsr-xr-x 1 root root 59976 фев  6 15:54 /usr/bin/passwd
+b4ll3r1um@Linex:~/Labs_OS/LR2/8$

@@ -1,0 +1,5 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/7$ bash DirBomb.sh test 1000
+Start size: 4096	/home/b4ll3r1um/Labs_OS/LR2/7/test
+Final size: 40759	/home/b4ll3r1um/Labs_OS/LR2/7/test
+Script done. Directory size after removing: 36864	/home/b4ll3r1um/Labs_OS/LR2/7/test)
+b4ll3r1um@Linex:~/Labs_OS/LR2/7$ 

@@ -1,0 +1,22 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/24$ ./priorityChanging 
+Process has priority 0
+Started thread with pause 1; it has priority 1
+Started thread with pause 2; it has priority 2
+Started thread with pause 3; it has priority 3
+Started thread with pause 4; it has priority 4
+Started thread with pause 5; it has priority 5
+Started thread with pause 6; it has priority 6
+Started thread with pause 7; it has priority 7
+Started thread with pause 8; it has priority 8
+Started thread with pause 9; it has priority 9
+Started thread with pause 10; it has priority 10
+Finished thread with pause 5; time 4358698
+Finished thread with pause 3; time 4364253
+Finished thread with pause 6; time 4393531
+Finished thread with pause 8; time 4394375
+Finished thread with pause 4; time 4395966
+Finished thread with pause 7; time 4415994
+Finished thread with pause 9; time 5247870
+Finished thread with pause 1; time 5249653
+Finished thread with pause 10; time 5251297
+Finished thread with pause 2; time 5255246

@@ -1,0 +1,16 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/14$ ./server
+Using default port: 8888
+Creating a new server
+	Port: 8888
+Server started. Waiting for connections...
+Client №1 connected
+Client №2 connected
+Client №3 connected
+Client №4 connected
+Client №5 connected
+Client №6 connected
+Client №7 connected
+Client №8 connected
+Client №9 connected
+Client №10 connected
+

@@ -1,0 +1,14 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ nice -n 10 ./user_process & nice -10 ./user_process2 & 
+[3] 10367
+[4] 10368
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ Iteration process 2 0
+Iteration 0
+Iteration process 2 1
+Iteration 1
+Iteration process 2 2
+Iteration 2
+Iteration process 2 3
+Iteration 3
+Iteration process 2 4
+Iteration 4
+^C

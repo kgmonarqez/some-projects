@@ -1,0 +1,91 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l
+total 1268
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:29 1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:16 10
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар  5 12:23 11
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:29 12
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:38 2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:44 3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:04 4
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:12 5
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 6
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:46 7
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 8
+drwxrwxr-x	 5 b4ll3r1um b4ll3r1um    4096 апр 23 17:59 9
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 1246200 апр 23 17:59 LR2.docx
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l 9
+total 16
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.4
+b4ll3r1um@Linex:~/Labs_OS/LR2$ sudo chown someuser 9
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l
+total 1216
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:29 1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:16 10
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар  5 12:23 11
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:29 12
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:38 2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:44 3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:04 4
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:12 5
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 6
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:46 7
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 8
+drwxrwxr-x 6 someuser  b4ll3r1um    4096 апр 23 18:00 9
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 1191972 апр 23 18:04 LR2.docx
+b4ll3r1um@Linex:~/Labs_OS/LR2$ sudo chown -R someuser 9
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l 9
+total 16
+drwxrwxr-x 2 someuser b4ll3r1um 4096 апр 23 18:00 9.1
+drwxrwxr-x 2 someuser b4ll3r1um 4096 апр 23 17:59 9.2
+drwxrwxr-x 2 someuser b4ll3r1um 4096 апр 23 17:59 9.3
+drwxrwxr-x 2 someuser b4ll3r1um 4096 апр 23 18:00 9.4
+b4ll3r1um@Linex:~/Labs_OS/LR2$ sudo chown -R b4ll3r1um 9
+sudo: /etc/sudoers: Not a directory
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l
+total 1128
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:29 1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:16 10
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар  5 12:23 11
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:29 12
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:38 2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:44 3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:04 4
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:12 5
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 6
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:46 7
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 8
+drwxrwxr-x 6 b4ll3r1um b4ll3r1um    4096 апр 23 18:00 9
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 1102679 апр 23 18:12 LR2.docx
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l 9
+total 16
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.4
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l
+total 1064
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:29 1
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:16 10
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар  5 12:23 11
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 мар 18 22:29 12
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:38 2
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 16:44 3
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:04 4
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:12 5
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 6
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:46 7
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um    4096 апр 23 17:58 8
+drwxrwxrwx 6 b4ll3r1um b4ll3r1um    4096 апр 23 18:00 9
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 1040100 апр 23 18:14 LR2.docx
+b4ll3r1um@Linex:~/Labs_OS/LR2$ ls -l 9
+total 16
+drwxrwxrwx 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.1
+drwxrwxrwx 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.2
+drwxrwxrwx 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:59 9.3
+drwxrwxrwx 2 b4ll3r1um b4ll3r1um 4096 апр 23 18:00 9.4
+b4ll3r1um@Linex:~/Labs_OS/LR2$ 

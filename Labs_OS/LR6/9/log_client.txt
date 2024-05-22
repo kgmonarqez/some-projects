@@ -1,0 +1,5 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ tty
+/dev/pts/1
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ ./client
+File name: info.txt
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ 

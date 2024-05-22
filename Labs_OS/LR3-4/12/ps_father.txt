@@ -1,0 +1,7 @@
+  UID   GID  RUID     PID    PPID    PGID TT          VSZ STAT COMMAND
+    0     0  1000   44848   44847   44848 pts/1     14396 Ss   sudo ./father
+    0     0     0   44849   44848   44849 pts/1      2644 SL+  ./father
+    0     0     0   44850   44849   44849 pts/1      2776 SL+  son 3 4
+    0     0     0   44851   44849   44849 pts/1      2776 SL+  son 3 4
+    0     0     0   44852   44849   44849 pts/1      2892 S+   sh -c ps -o uid,gid,ruid,pid,ppid,pgid,tty,vsz,stat,command > log.txt
+    0     0     0   44853   44852   44849 pts/1     12712 R+   ps -o uid,gid,ruid,pid,ppid,pgid,tty,vsz,stat,command

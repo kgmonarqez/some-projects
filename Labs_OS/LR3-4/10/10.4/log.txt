@@ -1,0 +1,29 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.4$ sudo ./father
+Process 1 created: pid=44106, ppid=44105
+Process 2 created: pid=44107, ppid=44106
+Process 3 created: pid=44108, ppid=44107
+Process 4 created: pid=44109, ppid=44108
+Termination: process 3
+Termination: process 1
+Termination: process 2
+Termination: process 4
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.4$ sudo ./father
+Process 1 created: pid=44118, ppid=44117
+Process 2 created: pid=44119, ppid=44118
+Process 3 created: pid=44120, ppid=44119
+Process 4 created: pid=44121, ppid=44120
+Termination: process 4
+Termination: process 3
+Termination: process 1
+Termination: process 2
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.4$ sudo ./father
+Process 1 created: pid=44127, ppid=44126
+Process 2 created: pid=44128, ppid=44127
+Process 3 created: pid=44129, ppid=44128
+Process 4 created: pid=44130, ppid=44129
+Termination: process 3
+Termination: process 1
+Termination: process 2
+Termination: process 4
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.4$ 
+

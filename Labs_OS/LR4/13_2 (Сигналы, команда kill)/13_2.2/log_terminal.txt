@@ -1,0 +1,7 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/13_2/13_2.2$ ./father res.txt
+son1 running
+son2 running
+Active son2 received signal at time Mon Apr  1 01:39:55 2024
+
+Signals sent at Mon Apr  1 01:39:55 2024
+Passive son1 received signal at Mon Apr  1 01:39:55 2024

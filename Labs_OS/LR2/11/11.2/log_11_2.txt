@@ -1,0 +1,64 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/11/11.2$ cat /proc/partitions
+major minor  #blocks  name
+
+   7        0      75996 loop0
+   7        1     273032 loop1
+   7        2          4 loop2
+   7        3     508908 loop3
+   7        4      93888 loop4
+   7        5      12620 loop5
+   7        6      41400 loop6
+   7        7        452 loop7
+  11        0      52274 sr0
+   8        0   26214400 sda
+   8        1       1024 sda1
+   8        2     525312 sda2
+   8        3   25686016 sda3
+   7        8      76020 loop8
+b4ll3r1um@Linex:~/Labs_OS/LR2/11/11.2$ cat /etc/mtab
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,nosuid,relatime,size=5426132k,nr_inodes=1356533,mode=755,inode64 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,noexec,relatime,size=1092888k,mode=755,inode64 0 0
+/dev/sda3 / ext4 rw,relatime,errors=remount-ro 0 0
+securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev/shm tmpfs rw,nosuid,nodev,inode64 0 0
+tmpfs /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k,inode64 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0
+bpf /sys/fs/bpf bpf rw,nosuid,nodev,noexec,relatime,mode=700 0 0
+systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=20824 0 0
+hugetlbfs /dev/hugepages hugetlbfs rw,relatime,pagesize=2M 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,relatime 0 0
+tracefs /sys/kernel/tracing tracefs rw,nosuid,nodev,noexec,relatime 0 0
+fusectl /sys/fs/fuse/connections fusectl rw,nosuid,nodev,noexec,relatime 0 0
+configfs /sys/kernel/config configfs rw,nosuid,nodev,noexec,relatime 0 0
+ramfs /run/credentials/systemd-sysusers.service ramfs ro,nosuid,nodev,noexec,relatime,mode=700 0 0
+/dev/loop2 /snap/bare/5 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop0 /snap/core22/1122 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop1 /snap/firefox/3836 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop3 /snap/gnome-42-2204/141 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop4 /snap/gtk-common-themes/1535 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop5 /snap/snap-store/959 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop6 /snap/snapd/20671 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/loop7 /snap/snapd-desktop-integration/83 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+/dev/sda3 /var/snap/firefox/common/host-hunspell ext4 ro,noexec,noatime,errors=remount-ro 0 0
+/dev/sda2 /boot/efi vfat rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 0
+binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /run/snapd/ns tmpfs rw,nosuid,nodev,noexec,relatime,size=1092888k,mode=755,inode64 0 0
+tmpfs /run/user/1000 tmpfs rw,nosuid,nodev,relatime,size=1092884k,nr_inodes=273221,mode=700,uid=1000,gid=1000,inode64 0 0
+gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+portal /run/user/1000/doc fuse.portal rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+/dev/sr0 /media/b4ll3r1um/VBox_GAs_7.0.16 iso9660 ro,nosuid,nodev,relatime,nojoliet,check=s,map=n,blocksize=2048,uid=1000,gid=1000,dmode=500,fmode=400,iocharset=utf8 0 0
+nsfs /run/snapd/ns/firefox.mnt nsfs rw 0 0
+/dev/loop8 /snap/core22/1380 squashfs ro,nodev,relatime,errors=continue,threads=single 0 0
+nsfs /run/snapd/ns/snapd-desktop-integration.mnt nsfs rw 0 0
+4ll3r1um@Linex:~/Labs_OS/LR2/11/11.2$ sudo mount /dev/sr0 ./
+sudo: /etc/sudoers: Not a directory
+mount: /home/b4ll3r1um/Labs_OS/LR2/11/11.2: WARNING: source write-protected, mounted read-only.
+b4ll3r1um@Linex:~/Labs_OS/LR2/11/11.2$ cat /etc/mtab | grep "dev/sr0"
+/dev/sr0 /media/b4ll3r1um/VBox_GAs_7.0.16 iso9660 ro,nosuid,nodev,relatime,nojoliet,check=s,map=n,blocksize=2048,uid=1000,gid=1000,dmode=500,fmode=400,iocharset=utf8 0 0
+/dev/sr0 /home/b4ll3r1um/Labs_OS/LR2/11/11.2 iso9660 ro,relatime,nojoliet,check=s,map=n,blocksize=2048,uid=1000,gid=1000,dmode=500,fmode=400,iocharset=utf8 0 0
+b4ll3r1um@Linex:~/Labs_OS/LR2/11/11.2$ 

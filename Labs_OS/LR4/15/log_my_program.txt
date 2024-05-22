@@ -1,0 +1,2 @@
+b4ll3r1um@Linex:~/Labs_OS/LR4/15$ ./checkPriority 
+Current priority: 0

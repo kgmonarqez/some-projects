@@ -1,0 +1,104 @@
+    PID TTY      STAT   TIME COMMAND
+   1930 tty2     Ssl+   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+   1935 tty2     Sl+    7:26  \_ /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+   2045 tty2     Sl+    0:00  \_ /usr/libexec/gnome-session-binary --session=ubuntu
+   1855 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1805 ?        Ss     0:00 /lib/systemd/systemd --user
+   1806 ?        S      0:00  \_ (sd-pam)
+   1812 ?        S<sl   0:00  \_ /usr/bin/pipewire
+   1813 ?        Ssl    0:00  \_ /usr/bin/pipewire-media-session
+   1814 ?        S<sl   0:07  \_ /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1825 ?        Ss     0:01  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1832 ?        Ssl    0:00  \_ /usr/libexec/gvfsd
+   2331 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
+  40782 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-http --spawner :1.2 /org/gtk/gvfs/exec_spaw/1
+   1838 ?        Sl     0:00  \_ /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1858 ?        Ssl    0:00  \_ /usr/libexec/xdg-document-portal
+   1863 ?        Ssl    0:00  \_ /usr/libexec/xdg-permission-store
+   1880 ?        SNsl   0:00  \_ /usr/libexec/tracker-miner-fs-3
+   1896 ?        Ssl    0:00  \_ /usr/libexec/gvfs-udisks2-volume-monitor
+   1911 ?        Ssl    0:00  \_ /usr/libexec/gvfs-goa-volume-monitor
+   1915 ?        Sl     0:00  \_ /usr/libexec/goa-daemon
+   1923 ?        Sl     0:00  \_ /usr/libexec/goa-identity-service
+   1929 ?        Ssl    0:00  \_ /usr/libexec/gvfs-gphoto2-volume-monitor
+   1940 ?        Ssl    0:00  \_ /usr/libexec/gvfs-mtp-volume-monitor
+   1944 ?        Ssl    0:00  \_ /usr/libexec/gvfs-afc-volume-monitor
+   2122 ?        Ssl    0:00  \_ /usr/libexec/at-spi-bus-launcher
+   2128 ?        S      0:00  |   \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_1
+   2141 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-ctl --monitor
+   2153 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   2454 ?        Sl     0:00  |   \_ /usr/libexec/evolution-data-server/evolution-alarm-notify
+   2471 ?        Sl     0:00  |   \_ /usr/libexec/gsd-disk-utility-notify
+   4789 ?        Sl     0:00  |   \_ update-notifier
+   2172 ?        Ssl    4:39  \_ /usr/bin/gnome-shell
+   2794 ?        Sl     0:01  |   \_ gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:0:70:0:0 -D 1920:0:1920:1080:1:0:0:0:0:1
+   4064 ?        Sl    13:27  |   \_ /snap/firefox/4033/usr/lib/firefox/firefox
+   4244 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -prefsLen 31828 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {24dfe74a-42de-4ea1-8fe5-3e63e4b371a3} 4064 true socket
+   4279 ?        Sl     0:01  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 31969 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {d312a1bf-cd6a-4b0c-aa50-4b3aa5a9fffe} 4064 true tab
+   4396 ?        Sl     0:14  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 37355 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {466903e5-0e58-4758-a4fc-66af37f2589f} 4064 true tab
+   4403 ?        Sl     0:01  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 31289 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {263b37de-f7be-4f3d-bee1-46a6dbc781e9} 4064 true tab
+   4620 ?        Sl     0:13  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -sandboxingKind 0 -prefsLen 37409 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {fa3a60ee-e0ed-4a07-bbcc-da0457974be9} 4064 true utility
+   4639 ?        Sl     0:58  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 31343 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {c2d45d43-20c6-4655-8191-64625c1a30c0} 4064 true tab
+   4768 ?        Sl    13:10  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -prefsLen 37651 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {90fff68b-2222-4767-b237-43327269a463} 4064 true rdd
+  37729 ?        Sl     0:17  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 58 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {84344aca-c5cd-4b77-b2ae-4464bf1fa0c5} 4064 true tab
+  39822 ?        Sl     0:12  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 80 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {b3317490-49bf-419c-95f6-0227629db2ee} 4064 true tab
+  40472 ?        Sl     0:06  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 83 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {3edebf23-52e6-4644-9fac-895ca203a2c2} 4064 true tab
+  41350 ?        Sl     0:11  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 93 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {380479e1-1eb0-4d53-87c5-9a1d05f8c9ee} 4064 true tab
+  41353 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 94 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {92078a81-d859-4b57-81c5-387363b9f643} 4064 true tab
+  41403 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 95 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {92b39850-1070-4063-ade6-361db3631736} 4064 true tab
+  41470 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 98 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {235918c8-360a-48c0-ae6f-ba079165a843} 4064 true tab
+  41543 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 99 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {5c427c92-28c6-4b0d-aaa3-268e8cd3216e} 4064 true tab
+  41596 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 100 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {645d68fb-ef35-466a-b017-737c5a48e99a} 4064 true tab
+  41637 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 101 -isForBrowser -prefsLen 31686 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {0e318434-b104-4ad5-8ac2-9d20b003a3ab} 4064 true tab
+  34524 ?        SLl    1:27  |   \_ telegram-desktop --
+   2188 ?        Ss     0:00  \_ /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+   2269 ?        Sl     0:00  |   \_ /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+   2273 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal
+   2280 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal-gnome
+   2287 ?        Sl     0:00  \_ /usr/libexec/gnome-shell-calendar-server
+   2304 ?        Ssl    0:00  \_ /usr/libexec/evolution-source-registry
+   2310 ?        Ssl    0:00  \_ /usr/libexec/dconf-service
+   2314 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal-gtk
+   2322 ?        Sl     0:01  \_ /usr/libexec/at-spi2-registryd --use-gnome-session
+   2328 ?        Ssl    0:00  \_ /usr/libexec/evolution-calendar-factory
+   2348 ?        Ssl    0:00  \_ /usr/libexec/evolution-addressbook-factory
+   2354 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   2380 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2398 ?        Ss     0:00  \_ sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+   2401 ?        Sl     0:02  |   \_ /usr/bin/ibus-daemon --panel disable --xim
+   2526 ?        Sl     0:00  |       \_ /usr/libexec/ibus-dconf
+   2527 ?        Sl     0:01  |       \_ /usr/libexec/ibus-extension-gtk3
+   2608 ?        Sl     0:00  |       \_ /usr/libexec/ibus-engine-simple
+   2399 ?        Ssl    0:00  \_ /usr/libexec/gsd-a11y-settings
+   2402 ?        Ssl    0:00  \_ /usr/libexec/gsd-color
+   2404 ?        Ssl    0:00  \_ /usr/libexec/gsd-datetime
+   2407 ?        Ssl    0:00  \_ /usr/libexec/gsd-housekeeping
+   2409 ?        Ssl    0:00  \_ /usr/libexec/gsd-keyboard
+   2411 ?        Ssl    0:00  \_ /usr/libexec/gsd-media-keys
+   2413 ?        Ssl    0:00  \_ /usr/libexec/gsd-power
+   2417 ?        Ssl    0:00  \_ /usr/libexec/gsd-print-notifications
+   2420 ?        Ssl    0:00  \_ /usr/libexec/gsd-rfkill
+   2421 ?        Ssl    0:00  \_ /usr/libexec/gsd-screensaver-proxy
+   2422 ?        Ssl    0:00  \_ /usr/libexec/gsd-sharing
+   2424 ?        Ssl    0:00  \_ /usr/libexec/gsd-smartcard
+   2427 ?        Ssl    0:00  \_ /usr/libexec/gsd-sound
+   2431 ?        Ssl    0:00  \_ /usr/libexec/gsd-wacom
+   2434 ?        Ssl    0:00  \_ /usr/libexec/gsd-xsettings
+   2516 ?        Sl     0:00  \_ /usr/libexec/gsd-printer
+   2530 ?        Sl     0:00  \_ /usr/libexec/ibus-x11 --kill-daemon
+   2534 ?        Sl     0:00  \_ /usr/libexec/ibus-portal
+   2541 ?        Sl     0:02  \_ /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+   2814 ?        Ssl    0:00  \_ /usr/libexec/gvfsd-metadata
+   4323 ?        Sl     0:00  \_ /usr/bin/snap userd
+   4960 ?        SNl    0:03  \_ /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  35707 ?        Ssl    0:02  \_ /usr/libexec/gnome-terminal-server
+  35739 pts/0    Ss     0:00  |   \_ bash
+  41818 pts/0    S+     0:00  |       \_ ./father.out
+  41819 pts/0    S+     0:00  |           \_ son.out
+  41820 pts/0    S+     0:00  |           \_ sh -c ps -xf > proc_table.txt
+  41821 pts/0    R+     0:00  |               \_ ps -xf
+  35797 ?        Sl     0:09  \_ /usr/bin/nautilus --gapplication-service
+  37633 ?        Sl     0:00  \_ /usr/lib/libreoffice/program/oosplash --writer file:///home/b4ll3r1um/Labs_OS/LR3-4/Karnaukhov_Vsevolod_lb3.odt
+  37650 ?        Sl     0:44  |   \_ /usr/lib/libreoffice/program/soffice.bin --writer file:///home/b4ll3r1um/Labs_OS/LR3-4/Karnaukhov_Vsevolod_lb3.odt
+  41041 ?        Sl     0:08  \_ evince /home/b4ll3r1um/Загрузки/Telegram Desktop/ИДЗ_1_2303.pdf
+  41049 ?        Sl     0:00  \_ /usr/libexec/evinced

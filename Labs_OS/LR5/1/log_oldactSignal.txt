@@ -1,0 +1,11 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ ./oldacts &
+[1] 16822
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ Signal 10
+Signal 12
+Signal 3
+Signal 2
+Signal 31
+kill -SIGUSR1 16822
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ jobs
+[1]   User defined signal 1   ./oldacts
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ 

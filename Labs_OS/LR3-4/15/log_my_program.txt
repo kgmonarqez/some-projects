@@ -1,0 +1,15 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ ./user_process & ps &
+[1] 10823
+[2] 10824
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ Iteration 0
+    PID TTY          TIME CMD
+   6412 pts/0    00:00:00 bash
+  10823 pts/0    00:00:00 user_process
+  10824 pts/0    00:00:00 ps
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+^C
+[1]-  Завершён        ./user_process
+[2]+  Завершён        ps

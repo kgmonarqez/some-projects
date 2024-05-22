@@ -1,0 +1,2 @@
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.1$ ./father res.txt
+Signal SIGUSR1 appears!

@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ ./client
+Send a message (type empty string to quit)
+> QWE
+Server feedback: QWE
+> ASD
+Server feedback: ASD
+> CCCXCXCXC
+Server feedback: CCCXCXCXC
+> GSDGWER
+Server feedback: GSDGWER
+> 
+Shutting down...
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ 

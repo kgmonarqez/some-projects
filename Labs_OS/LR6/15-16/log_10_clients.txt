@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/15-16$ ./server
+Waiting for new messages...
+Message №1: HI
+Message №2: HI
+Message №3: HI
+Message №4: HI
+Message №5: HI
+Message №6: HI
+Message №7: HI
+Message №8: HI
+Message №9: HI
+Message №10: HI
+

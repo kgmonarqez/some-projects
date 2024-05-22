@@ -1,0 +1,19 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ ls -l
+total 8
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   6 мар  2 19:31 orig
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 594 мар  5 14:54 SoftLinksObserver.sh
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ ln -s orig softlink
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ ls -l
+total 8
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   6 мар  2 19:31 orig
+lrwxrwxrwx 1 b4ll3r1um b4ll3r1um   4 апр 23 16:28 softlink -> orig
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 594 мар  5 14:54 SoftLinksObserver.sh
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ cp -P softlink softlinkCopy
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ ls -l
+total 8
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um   6 мар  2 19:31 orig
+lrwxrwxrwx 1 b4ll3r1um b4ll3r1um   4 апр 23 16:28 softlink -> orig
+lrwxrwxrwx 1 b4ll3r1um b4ll3r1um   4 апр 23 16:29 softlinkCopy -> orig
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 594 мар  5 14:54 SoftLinksObserver.sh
+b4ll3r1um@Linex:~/Labs_OS/LR2/3$ 
+

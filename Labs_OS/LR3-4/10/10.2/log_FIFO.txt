@@ -1,0 +1,43 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.2$ ./father_FIFO 
+Process 1 created: pid=33460, ppid=10347
+Process 2 created: pid=33461, ppid=33460
+Process 3 created: pid=33462, ppid=33461
+Process 4 created: pid=33463, ppid=33462
+Process 5 created: pid=33464, ppid=33463
+Process 6 created: pid=33465, ppid=33464
+Process 7 created: pid=33466, ppid=33465
+Process 8 created: pid=33467, ppid=33466
+Process 9 created: pid=33468, ppid=33467
+Process 10 created: pid=33469, ppid=33468
+Termination: process 6
+Termination: process 5
+Termination: process 4
+Termination: process 7
+Termination: process 1
+Termination: process 3
+Termination: process 2
+Termination: process 10
+Termination: process 9
+Termination: process 8
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.2$ ./father_FIFO 
+Process 1 created: pid=33473, ppid=10347
+Process 2 created: pid=33474, ppid=33473
+Process 3 created: pid=33475, ppid=33474
+Process 4 created: pid=33476, ppid=33475
+Process 5 created: pid=33477, ppid=33476
+Process 6 created: pid=33478, ppid=33477
+Process 7 created: pid=33479, ppid=33478
+Process 8 created: pid=33480, ppid=33479
+Process 9 created: pid=33481, ppid=33480
+Process 10 created: pid=33482, ppid=33481
+Termination: process 4
+Termination: process 6
+Termination: process 5
+Termination: process 7
+Termination: process 8
+Termination: process 3
+Termination: process 2
+Termination: process 10
+Termination: process 1
+Termination: process 9
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.2$ 

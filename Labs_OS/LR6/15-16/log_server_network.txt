@@ -1,0 +1,5 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ ./server
+Waiting for new messages...
+Some client sent: NETWORK METHOD
+Some client sent: QWERTYASDFGHZXCVBN
+Some client sent: adadadadaa12315346

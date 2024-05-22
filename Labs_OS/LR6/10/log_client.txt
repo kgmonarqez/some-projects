@@ -1,0 +1,17 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$ tty
+/dev/pts/1
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$ ./client
+Using default key file key
+Connected to queue
+Type any message to server
+Linux
+New message from server: OK
+qwertyuioasdfghjkl
+New message from server: OK
+AAAABBBBCCCC
+New message from server: OK
+ZXC
+New message from server: OK
+^C
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$ 
+

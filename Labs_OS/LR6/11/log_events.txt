@@ -1,0 +1,30 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/11$ ./events
+A
+User moved LEFT
+D
+User moved RIGHT
+W
+User moved UP
+S
+User moved DOWN
+S
+User moved DOWN
+S
+User moved DOWN
+S
+User moved DOWN
+D
+User moved RIGHT
+D
+User moved RIGHT
+W
+User moved UP
+A
+User moved LEFT
+q 
+Unknown action from user
+f
+Unknown action from user
+QUIT
+User quit simulator
+b4ll3r1um@Linex:~/Labs_OS/LR6/11$ 

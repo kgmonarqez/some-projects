@@ -1,0 +1,36 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/5$ ./subRT
+pid 23624's current affinity mask: ff
+pid 23624's new affinity mask: 1
+SIGRTMIN caught
+SIGRTMIN+1 caught
+SIGRTMIN+2 caught
+SIGRTMIN+2 caught
+SIGRTMIN+3 caught
+SIGRTMIN+3 caught
+SIGRTMIN+3 caught
+SIGRTMIN+3 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+4 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+SIGRTMIN+5 caught
+b4ll3r1um@Linex:~/Labs_OS/LR5/5$ 

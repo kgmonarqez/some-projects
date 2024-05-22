@@ -1,0 +1,214 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/3$ g++ -o src code.cpp && ./src &
+[1] 15940
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/3$ 
+Parent: 15948
+Son: 15949
+
+Parent: 15949
+Son: 0
+taskset -p 0x1 15948
+pid 15948's current affinity mask: ffff
+pid 15948's new affinity mask: 1
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/3$ Current pid: 15949
+Parent: 100, with pid 15949
+Current pid: 15949
+Parent: 200, with pid 15949
+Current pid: 15949
+Parent: 300, with pid 15949
+Current pid: 15949
+Parent: 400, with pid 15949
+Current pid: 15949
+Parent: 500, with pid 15949
+Current pid: 15949
+Parent: 600, with pid 15949
+Current pid: 15949
+Parent: 700, with pid 15949
+Current pid: 15949
+Parent: 800, with pid 15949
+Current pid: 15949
+Parent: 900, with pid 15949
+Current pid: 15949
+Parent: 1000, with pid 15949
+Current pid: 15949
+Parent: 1100, with pid 15949
+Current pid: 15949
+Parent: 1200, with pid 15949
+Current pid: 15949
+Parent: 1300, with pid 15949
+Current pid: 15949
+Parent: 1400, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: 0, with pid 0
+Parent: 1500, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -100, with pid 0
+Parent: 1600, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -200, with pid 0
+Parent: 1700, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -300, with pid 0
+Parent: 1800, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -400, with pid 0
+Parent: 1900, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -500, with pid 0
+Parent: 2000, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -600, with pid 0
+Parent: 2100, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -700, with pid 0
+Parent: 2200, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -800, with pid 0
+Parent: 2300, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -900, with pid 0
+Parent: 2400, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1000, with pid 0
+Parent: 2500, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1100, with pid 0
+Parent: 2600, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1200, with pid 0
+Parent: 2700, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1300, with pid 0
+Parent: 2800, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1400, with pid 0
+Parent: 2900, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1500, with pid 0
+Parent: 3000, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1600, with pid 0
+Parent: 3100, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1700, with pid 0
+Parent: 3200, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1800, with pid 0
+Parent: 3300, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -1900, with pid 0
+Parent: 3400, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2000, with pid 0
+Parent: 3500, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2100, with pid 0
+Parent: 3600, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2200, with pid 0
+Parent: 3700, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2300, with pid 0
+Parent: 3800, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2400, with pid 0
+Parent: 3900, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2500, with pid 0
+Parent: 4000, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2600, with pid 0
+Parent: 4100, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2700, with pid 0
+Parent: 4200, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2800, with pid 0
+Parent: 4300, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -2900, with pid 0
+Parent: 4400, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3000, with pid 0
+Parent: 4500, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3100, with pid 0
+Parent: 4600, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3200, with pid 0
+Parent: 4700, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3300, with pid 0
+Parent: 4800, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3400, with pid 0
+Parent: 4900, with pid 15949
+	Current pid: 0
+Current pid: 15949
+	Son: -3500, with pid 0
+Parent: 5000, with pid 15949
+	Current pid: 0
+Program with pid 15949 done!
+	Son: -3600, with pid 0
+	Current pid: 0
+	Son: -3700, with pid 0
+	Current pid: 0
+	Son: -3800, with pid 0
+	Current pid: 0
+	Son: -3900, with pid 0
+	Current pid: 0
+	Son: -4000, with pid 0
+	Current pid: 0
+	Son: -4100, with pid 0
+	Current pid: 0
+	Son: -4200, with pid 0
+	Current pid: 0
+	Son: -4300, with pid 0
+	Current pid: 0
+	Son: -4400, with pid 0
+	Current pid: 0
+	Son: -4500, with pid 0
+	Current pid: 0
+	Son: -4600, with pid 0
+	Current pid: 0
+	Son: -4700, with pid 0
+	Current pid: 0
+	Son: -4800, with pid 0
+	Current pid: 0
+	Son: -4900, with pid 0
+Program with pid 0 done!
+

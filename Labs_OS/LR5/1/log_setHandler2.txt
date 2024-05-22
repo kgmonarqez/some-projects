@@ -1,0 +1,8 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ ./src2
+	Second-group signal: 10
+First-group signal: 12
+	Second-group signal: 3
+First-group signal: 2
+	Second-group signal: 31
+Killed
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ 

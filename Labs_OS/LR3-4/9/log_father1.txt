@@ -1,0 +1,21 @@
+Father parameters was: pid=55606 ppid=35739
+1) Child with pid = 0 is finished with status 0
+2) Child with pid = 0 is finished with status 0
+3) Child with pid = 0 is finished with status 0
+4) Child with pid = 0 is finished with status 0
+5) Child with pid = 0 is finished with status 0
+Proccess pid = 55607 was success.
+Proccess pid = 55608 was success.
+Proccess pid = 55609 was success.
+Proccess pid = 55610 was success.
+Proccess pid = 55611 was success.
+
+ Son parameters was: pid=55608, ppid=55606
+
+ Son parameters was: pid=55607, ppid=55606
+
+ Son parameters was: pid=55609, ppid=55606
+
+ Son parameters was: pid=55610, ppid=55606
+
+ Son parameters was: pid=55611, ppid=55606

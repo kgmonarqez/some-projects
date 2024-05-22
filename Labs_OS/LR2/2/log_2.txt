@@ -1,0 +1,6 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/2$ bash HardLinksObserver.sh orig
+397153 -rw-rw-r-- 4 b4ll3r1um b4ll3r1um    4 мар  2 18:03 farhardlink
+397153 -rw-rw-r-- 4 b4ll3r1um b4ll3r1um   4 мар  2 18:03 hardlink
+397153 -rw-rw-r-- 4 b4ll3r1um b4ll3r1um   4 мар  2 18:03 hardlink2
+397153 -rw-rw-r-- 4 b4ll3r1um b4ll3r1um   4 мар  2 18:03 orig
+b4ll3r1um@Linex:~/Labs_OS/LR2/2$ 

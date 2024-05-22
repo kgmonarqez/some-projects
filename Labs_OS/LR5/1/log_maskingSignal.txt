@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ ./mask &
+[1] 15737
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ SIGBUS caught: 5 sec pause
+kill -SIGUSR1 15737
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ kill -SIGUSR2 15737
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ kill -SIGSYS 15737
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ SIGBUS procession ended
+Signal with number 31
+Signal with number 10
+Signal with number 12
+
+[1]   Killed                  ./mask
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ 

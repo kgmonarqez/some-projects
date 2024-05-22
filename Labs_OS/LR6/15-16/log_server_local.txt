@@ -1,0 +1,7 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ ./server
+Waiting for new messages...
+Some client sent: QWE
+Some client sent: ASD
+Some client sent: CCCXCXCXC
+Some client sent: GSDGWER
+

@@ -1,0 +1,43 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.2$ ./father_OTHER 
+Process 1 created: pid=37788, ppid=10347
+Process 2 created: pid=37789, ppid=37788
+Process 3 created: pid=37790, ppid=37789
+Process 4 created: pid=37791, ppid=37790
+Process 5 created: pid=37792, ppid=37791
+Process 6 created: pid=37793, ppid=37792
+Process 7 created: pid=37794, ppid=37793
+Process 8 created: pid=37795, ppid=37794
+Process 9 created: pid=37796, ppid=37795
+Process 10 created: pid=37797, ppid=37796
+Termination: process 1
+Termination: process 3
+Termination: process 6
+Termination: process 7
+Termination: process 4
+Termination: process 5
+Termination: process 10
+Termination: process 2
+Termination: process 8
+Termination: process 9
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/10/10.2$ ./father_OTHER 
+Process 1 created: pid=37817, ppid=10347
+Process 2 created: pid=37818, ppid=37817
+Process 3 created: pid=37819, ppid=37818
+Process 4 created: pid=37820, ppid=37819
+Process 5 created: pid=37821, ppid=37820
+Process 6 created: pid=37822, ppid=37821
+Process 7 created: pid=37823, ppid=37822
+Process 8 created: pid=37824, ppid=37823
+Process 9 created: pid=37825, ppid=37824
+Process 10 created: pid=37826, ppid=37825
+Termination: process 3
+Termination: process 1
+Termination: process 4
+Termination: process 7
+Termination: process 6
+Termination: process 5
+Termination: process 2
+Termination: process 10
+Termination: process 9
+Termination: process 8
+

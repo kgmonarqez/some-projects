@@ -1,0 +1,141 @@
+    PID TTY      STAT   TIME COMMAND
+   1924 tty2     Ssl+   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+   1929 tty2     Sl+   36:18  \_ /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+   2080 tty2     Sl+    0:00  \_ /usr/libexec/gnome-session-binary --session=ubuntu
+   1827 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1785 ?        Ss     0:00 /lib/systemd/systemd --user
+   1786 ?        S      0:00  \_ (sd-pam)
+   1792 ?        S<sl   0:00  \_ /usr/bin/pipewire
+   1793 ?        Ssl    0:00  \_ /usr/bin/pipewire-media-session
+   1794 ?        S<sl  11:22  \_ /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1806 ?        Ss     0:05  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1813 ?        Ssl    0:00  \_ /usr/libexec/gvfsd
+   2339 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
+  11078 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1
+  11120 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/3
+  36102 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-http --spawner :1.2 /org/gtk/gvfs/exec_spaw/4
+   1818 ?        Sl     0:00  \_ /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1842 ?        Ssl    0:00  \_ /usr/libexec/xdg-document-portal
+   1845 ?        Ssl    0:00  \_ /usr/libexec/xdg-permission-store
+   1862 ?        SNsl   0:00  \_ /usr/libexec/tracker-miner-fs-3
+   1879 ?        Ssl    0:00  \_ /usr/libexec/gvfs-udisks2-volume-monitor
+   1893 ?        Ssl    0:00  \_ /usr/libexec/gvfs-goa-volume-monitor
+   1897 ?        Sl     0:00  \_ /usr/libexec/goa-daemon
+   1905 ?        Sl     0:00  \_ /usr/libexec/goa-identity-service
+   1908 ?        Ssl    0:00  \_ /usr/libexec/gvfs-gphoto2-volume-monitor
+   1922 ?        Ssl    0:00  \_ /usr/libexec/gvfs-mtp-volume-monitor
+   1931 ?        Ssl    0:00  \_ /usr/libexec/gvfs-afc-volume-monitor
+   2157 ?        Ssl    0:00  \_ /usr/libexec/at-spi-bus-launcher
+   2163 ?        S      0:00  |   \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_1
+   2176 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-ctl --monitor
+   2188 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   2461 ?        Sl     0:00  |   \_ /usr/libexec/evolution-data-server/evolution-alarm-notify
+   2489 ?        Sl     0:00  |   \_ /usr/libexec/gsd-disk-utility-notify
+   4333 ?        Sl     0:00  |   \_ update-notifier
+   2207 ?        Ssl   15:19  \_ /usr/bin/gnome-shell
+   2817 ?        Sl     0:05  |   \_ gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:0:70:0:0 -D 1920:0:1920:1080:1:0:0:0:0:1
+   4502 ?        Sl    59:00  |   \_ /snap/firefox/4033/usr/lib/firefox/firefox
+   4678 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -prefsLen 31828 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {191ed82d-ca23-4679-90b6-a498475cf054} 4502 true socket
+   4711 ?        Sl     0:03  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 31969 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {f0e15ec1-b530-4da6-bbaf-02018c52f9fb} 4502 true tab
+   4834 ?        Sl     0:44  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 37355 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {de347aa2-81ee-45ee-a8ff-56c60712aa4b} 4502 true tab
+   5046 ?        Sl     1:26  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -sandboxingKind 0 -prefsLen 37409 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {5463451e-0934-44b6-b636-4db959a273d5} 4502 true utility
+   5114 ?        Sl    28:49  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -parentBuildID 20240322073705 -prefsLen 37523 -prefMapSize 238389 -appDir /snap/firefox/4033/usr/lib/firefox/browser {a58d042f-76b4-4377-92c7-e3b4243ce116} 4502 true rdd
+   5284 ?        Sl    15:17  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 5 -isForBrowser -prefsLen 31457 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {d6389d76-c827-4789-ab01-44060d1b8d1c} 4502 true tab
+   7813 ?        Sl     1:51  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 19 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {813a66f1-dfd6-427d-89a8-c4868d4f3dbd} 4502 true tab
+   9396 ?        Sl     0:02  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 30 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {15d5a453-9a46-4846-b168-875a60aabb36} 4502 true tab
+  11234 ?        Sl     5:34  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 49 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {979195db-bc17-4de8-900b-96131eb08902} 4502 true tab
+  11305 ?        Sl     0:08  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 50 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {2905cd5c-ee43-47b3-bc02-2a2c100c2810} 4502 true tab
+  11510 ?        Sl     0:24  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 54 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {6e55f97e-ed49-4eb5-8735-30b560632d5d} 4502 true tab
+  12553 ?        Sl     0:02  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 66 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {9256208b-abff-4eea-9a5c-e957169c1911} 4502 true tab
+  14684 ?        Sl     0:23  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 91 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {2b955127-1780-4372-aae6-d092673850e4} 4502 true tab
+  23265 ?        Sl    22:27  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 201 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {56ceb244-ac5d-468f-8e86-9b96d58c5c80} 4502 true tab
+  35740 ?        Sl     0:22  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 314 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {f338b00a-3aef-4796-817b-37574b108afe} 4502 true tab
+  35979 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 316 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {0e3fdddf-fb0a-474a-b61b-1125c5b9db8a} 4502 true tab
+  37124 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 320 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {4105353e-fdf9-48b0-a06d-b538d0edadb0} 4502 true tab
+  37136 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 321 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {62a2b4aa-7ae7-4ff0-85e1-eaf867877dbc} 4502 true tab
+  37385 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 322 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {651add71-f7c9-455d-910a-98c2fe259356} 4502 true tab
+  37801 ?        Sl     0:00  |   |   \_ /snap/firefox/4033/usr/lib/firefox/firefox -contentproc -childID 323 -isForBrowser -prefsLen 31538 -prefMapSize 238389 -jsInitLen 234952 -parentBuildID 20240322073705 -greomni /snap/firefox/4033/usr/lib/firefox/omni.ja -appomni /snap/firefox/4033/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4033/usr/lib/firefox/browser {8e69c3fa-c29f-49fc-bc60-b7bbd5bd05b4} 4502 true tab
+   5344 ?        SLl    3:53  |   \_ telegram-desktop --
+   8148 ?        Sl     1:01  |   \_ /snap/discord/184/usr/share/discord/Discord --use-tray-icon --no-sandbox --disable-seccomp-filter-sandbox
+   8308 ?        S      0:00  |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=zygote --no-zygote-sandbox --disable-seccomp-filter-sandbox --no-sandbox
+   8352 ?        Sl     0:50  |   |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=gpu-process --disable-seccomp-filter-sandbox --no-sandbox --crashpad-handler-pid=8322 --enable-crash-reporter=dc23021b-8c20-4f90-9702-9e1e2811b9db,no_channel --user-data-dir=/home/b4ll3r1um/snap/discord/184/.config/discord --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,4201359523381688127,11607859685920445618,262144 --enable-features=kWebSQLAccess --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version
+   8309 ?        S      0:00  |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=zygote --disable-seccomp-filter-sandbox --no-sandbox
+  21341 ?        Sl     1:06  |   |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=renderer --crashpad-handler-pid=8322 --enable-crash-reporter=dc23021b-8c20-4f90-9702-9e1e2811b9db,no_channel --user-data-dir=/home/b4ll3r1um/snap/discord/184/.config/discord --secure-schemes=disclip --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=disclip --app-path=/snap/discord/184/usr/share/discord/resources/app.asar --enable-sandbox --disable-seccomp-filter-sandbox --no-sandbox --autoplay-policy=no-user-gesture-required --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13 --time-ticks-at-unix-epoch=-1712836559973642 --launch-time-ticks=13212023251 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4201359523381688127,11607859685920445618,262144 --enable-features=kWebSQLAccess --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version --enable-node-leakage-in-renderers
+   8371 ?        Sl     0:13  |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=8322 --enable-crash-reporter=dc23021b-8c20-4f90-9702-9e1e2811b9db,no_channel --user-data-dir=/home/b4ll3r1um/snap/discord/184/.config/discord --secure-schemes=disclip --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=disclip --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4201359523381688127,11607859685920445618,262144 --enable-features=kWebSQLAccess --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version
+   8453 ?        Sl     9:09  |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=renderer --crashpad-handler-pid=8322 --enable-crash-reporter=dc23021b-8c20-4f90-9702-9e1e2811b9db,no_channel --user-data-dir=/home/b4ll3r1um/snap/discord/184/.config/discord --secure-schemes=disclip --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=disclip --app-path=/snap/discord/184/usr/share/discord/resources/app.asar --no-sandbox --no-zygote --disable-seccomp-filter-sandbox --no-sandbox --autoplay-policy=no-user-gesture-required --lang=ru --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1712836559973642 --launch-time-ticks=2993476298 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4201359523381688127,11607859685920445618,262144 --enable-features=kWebSQLAccess --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version --enable-node-leakage-in-renderers
+   8493 ?        Sl     0:01  |   |   \_ /snap/discord/184/usr/share/discord/Discord --type=utility --utility-sub-type=audio.mojom.AudioService --lang=ru --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=8322 --enable-crash-reporter=dc23021b-8c20-4f90-9702-9e1e2811b9db,no_channel --user-data-dir=/home/b4ll3r1um/snap/discord/184/.config/discord --secure-schemes=disclip --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=disclip --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,4201359523381688127,11607859685920445618,262144 --enable-features=kWebSQLAccess --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version
+  10811 ?        SLl    0:42  |   \_ /usr/share/code/code --unity-launch
+  10816 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote --no-zygote-sandbox
+  10847 ?        Sl     0:41  |   |   |   \_ /usr/share/code/code --type=gpu-process --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+  10817 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote
+  10819 ?        S      0:00  |   |   |   \_ /usr/share/code/code --type=zygote
+  10868 ?        Sl     2:03  |   |   |       \_ /usr/share/code/code --type=renderer --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --first-renderer-process --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1712836559973642 --launch-time-ticks=4442721017 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --vscode-window-config=vscode:7a2faaa1-19e5-46c7-92c8-35fa3f069429
+  10855 ?        Sl     0:01  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+  10938 ?        Sl     0:19  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --inspect-port=0 --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+  10994 ?        Sl     0:34  |   |   |   \_ /home/b4ll3r1um/.vscode/extensions/ms-vscode.cpptools-1.19.9-linux-x64/bin/cpptools
+  10952 ?        Sl     0:04  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+  10953 ?        Sl     0:02  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=10833 --enable-crash-reporter=0cc0d17f-1d24-454c-b582-3589a3e89af3,no_channel --user-data-dir=/home/b4ll3r1um/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,11870953687461666796,15565402706142495003,262144 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+  13764 ?        Sl     3:20  |   \_ gnome-control-center
+   2308 ?        Sl     0:00  \_ /usr/libexec/gnome-shell-calendar-server
+   2315 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal
+   2321 ?        Ssl    0:00  \_ /usr/libexec/dconf-service
+   2322 ?        Ssl    0:00  \_ /usr/libexec/evolution-source-registry
+   2331 ?        Ssl    0:05  \_ /usr/libexec/xdg-desktop-portal-gnome
+   2336 ?        Ssl    0:00  \_ /usr/libexec/evolution-calendar-factory
+   2364 ?        Ssl    0:00  \_ /usr/libexec/evolution-addressbook-factory
+   2380 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   2382 ?        Sl     0:04  \_ /usr/libexec/at-spi2-registryd --use-gnome-session
+   2411 ?        Ss     0:00  \_ sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+   2414 ?        Sl     0:27  |   \_ /usr/bin/ibus-daemon --panel disable --xim
+   2524 ?        Sl     0:00  |       \_ /usr/libexec/ibus-dconf
+   2527 ?        Sl     0:07  |       \_ /usr/libexec/ibus-extension-gtk3
+   2642 ?        Sl     0:07  |       \_ /usr/libexec/ibus-engine-simple
+   2412 ?        Ssl    0:00  \_ /usr/libexec/gsd-a11y-settings
+   2415 ?        Ssl    0:00  \_ /usr/libexec/gsd-color
+   2417 ?        Ssl    0:00  \_ /usr/libexec/gsd-datetime
+   2420 ?        Ssl    0:00  \_ /usr/libexec/gsd-housekeeping
+   2423 ?        Ssl    0:00  \_ /usr/libexec/gsd-keyboard
+   2425 ?        Ssl    0:00  \_ /usr/libexec/gsd-media-keys
+   2429 ?        Ssl    0:00  \_ /usr/libexec/gsd-power
+   2432 ?        Ssl    0:00  \_ /usr/libexec/gsd-print-notifications
+   2433 ?        Ssl    0:00  \_ /usr/libexec/gsd-rfkill
+   2434 ?        Ssl    0:00  \_ /usr/libexec/gsd-screensaver-proxy
+   2436 ?        Ssl    0:00  \_ /usr/libexec/gsd-sharing
+   2438 ?        Ssl    0:00  \_ /usr/libexec/gsd-smartcard
+   2442 ?        Ssl    0:00  \_ /usr/libexec/gsd-sound
+   2447 ?        Ssl    0:00  \_ /usr/libexec/gsd-wacom
+   2452 ?        Ssl    0:00  \_ /usr/libexec/gsd-xsettings
+   2533 ?        Sl     0:00  \_ /usr/libexec/ibus-x11 --kill-daemon
+   2537 ?        Sl     0:06  \_ /usr/libexec/ibus-portal
+   2549 ?        Sl     0:00  \_ /usr/libexec/gsd-printer
+   2552 ?        Sl     0:02  \_ /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+   2602 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2620 ?        Ssl    0:01  \_ /usr/libexec/xdg-desktop-portal-gtk
+   2837 ?        Ssl    0:00  \_ /usr/libexec/gvfsd-metadata
+   4755 ?        Sl     0:00  \_ /usr/bin/snap userd
+   6175 ?        Ss     0:00  \_ /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+   6373 ?        Sl     0:01  |   \_ /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+   8322 ?        Sl     0:00  \_ /snap/discord/184/usr/share/discord/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/b4ll3r1um/snap/discord/184/.config/discord/Crashpad --url=https://f.a.k/e --annotation=_productName=discord --annotation=_version=0.0.49 --annotation=lsb-release=Ubuntu Core 22 --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=28.2.10 --initial-client-fd=45 --shared-client-connection
+   9568 ?        Sl     1:38  \_ /usr/bin/nautilus --gapplication-service
+   9868 ?        Sl     0:00  \_ /usr/lib/libreoffice/program/oosplash --writer file:///home/b4ll3r1um/Labs_OS/LR3-4/Karnaukhov_Vsevolod_lb3.odt
+   9884 ?        Sl     4:11  |   \_ /usr/lib/libreoffice/program/soffice.bin --writer file:///home/b4ll3r1um/Labs_OS/LR3-4/Karnaukhov_Vsevolod_lb3.odt
+  10310 ?        S      0:00  \_ /usr/bin/python3 /usr/bin/gnome-terminal --wait
+  10313 ?        Sl     0:00  |   \_ /usr/bin/gnome-terminal.real --wait
+  10316 ?        Ssl    0:50  \_ /usr/libexec/gnome-terminal-server
+  10347 pts/0    Ss     0:00  |   \_ bash
+  37817 pts/0    R+     0:00  |       \_ ./father_OTHER
+  37818 pts/0    R+     0:00  |           \_ ./father_OTHER
+  37819 pts/0    R+     0:00  |               \_ ./father_OTHER
+  37820 pts/0    R+     0:00  |                   \_ ./father_OTHER
+  37821 pts/0    R+     0:00  |                       \_ ./father_OTHER
+  37822 pts/0    R+     0:00  |                           \_ ./father_OTHER
+  37823 pts/0    R+     0:00  |                               \_ ./father_OTHER
+  37824 pts/0    R+     0:00  |                                   \_ ./father_OTHER
+  37825 pts/0    R+     0:00  |                                       \_ ./father_OTHER
+  37826 pts/0    R+     0:00  |                                           \_ ./father_OTHER
+  37827 pts/0    S+     0:00  |                                               \_ ./father_OTHER
+  37828 pts/0    S+     0:00  |                                                   \_ sh -c ps xf > log.txt
+  37829 pts/0    R+     0:00  |                                                       \_ ps xf
+  10833 ?        Sl     0:00  \_ /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/b4ll3r1um/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=e0a1b0a2-893d-4107-bb45-6bd451eae30f&iid=e0a1b0a2-893d-4107-bb45-6bd451eae30f&sid=e0a1b0a2-893d-4107-bb45-6bd451eae30f --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.82.2 --annotation=lsb-release=Ubuntu 22.04.3 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=25.8.1 --initial-client-fd=44 --shared-client-connection
+  11138 ?        Sl     0:04  \_ /home/b4ll3r1um/.vscode/extensions/ms-vscode.cpptools-1.19.9-linux-x64/bin/cpptools-srv 10994 {0D4DCCC5-49D4-4B24-A8DC-54EFFAA0C37B}
+  29137 ?        Sl     0:01  \_ /home/b4ll3r1um/.vscode/extensions/ms-vscode.cpptools-1.19.9-linux-x64/bin/cpptools-srv 10994 {4FD1EB47-C368-46D5-BFAB-6FF7212B314A}

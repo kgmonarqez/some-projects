@@ -1,0 +1,8 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/13$ ./server
+Using default port: 8888
+Creating a new server
+	Port: 8888
+Server started. Waiting for connections...
+Client 1 sent: network experiment succeded!
+Some client terminated connection: Success
+

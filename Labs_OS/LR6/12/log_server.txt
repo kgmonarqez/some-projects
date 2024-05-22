@@ -1,0 +1,17 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$ tty
+/dev/pts/0
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$ ./server
+Using default port: 8888
+Creating a new server
+	Port: 8888
+Server started. Waiting for connections...
+Client 1 sent: Hello!
+Client 1 sent: How are you
+Client 1 sent: QWE
+Client 1 sent: ZXC
+Client 1 sent: FFFFFFFFFF
+Client 2 sent: Hello from client 2
+Some client terminated connection: Success
+^C
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$ 
+

@@ -1,0 +1,35 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ find / -type p -ls 2>/dev/null
+       84      0 prw-rw-r--   1 b4ll3r1um b4ll3r1um        0 апр 23 15:56 /run/user/1000/gnome-session-leader-fifo
+        6      0 p---------   1 b4ll3r1um b4ll3r1um        0 апр 23 15:56 /run/user/1000/systemd/inaccessible/fifo
+      334      0 prw-------   1 root      root             0 апр 23 15:56 /run/initctl
+     1564      0 prw-------   1 root      root             0 апр 23 15:57 /run/systemd/inhibit/14.ref
+     1560      0 prw-------   1 root      root             0 апр 23 15:57 /run/systemd/inhibit/13.ref
+     1558      0 prw-------   1 root      root             0 апр 23 15:57 /run/systemd/inhibit/12.ref
+     1510      0 prw-------   1 root      root             0 апр 23 15:57 /run/systemd/inhibit/10.ref
+     1353      0 prw-------   1 root      root             0 апр 23 15:56 /run/systemd/inhibit/4.ref
+     1199      0 prw-------   1 root      root             0 апр 23 15:56 /run/systemd/inhibit/3.ref
+     1197      0 prw-------   1 root      root             0 апр 23 15:56 /run/systemd/inhibit/2.ref
+     1191      0 prw-------   1 root      root             0 апр 23 15:56 /run/systemd/inhibit/1.ref
+     1426      0 prw-------   1 root      root             0 апр 23 15:56 /run/systemd/sessions/2.ref
+      292      0 p---------   1 root      root             0 апр 23 15:56 /run/systemd/inaccessible/fifo
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ ls -l
+total 0
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ mkdir $(uname)
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ ls -l
+total 4
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:06 Linux
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ touch $(logname)
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ ls -l
+total 4
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um    0 апр 23 17:08 b4ll3r1um
+drwxrwxr-x 2 b4ll3r1um b4ll3r1um 4096 апр 23 17:06 Linux
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ cat $(logname)
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ echo "This file name is $(logname)" >> $(logname)
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ cat $(logname)
+This file name is b4ll3r1um
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ echo $(uname -a) >> $(logname)
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ cat $(logname)
+This file name is b4ll3r1um
+Linux Linex 6.5.0-27-generic #28~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 15 10:51:06 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+b4ll3r1um@Linex:~/Labs_OS/LR2/5$ 
+

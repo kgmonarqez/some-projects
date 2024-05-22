@@ -1,0 +1,41 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ touch text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ echo First string >> text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ echo Second STRING >> text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ echo Third one >> text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ cat text
+First string
+Second STRING
+Third one
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ ls -l
+total 4
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 37 апр 23 18:22 text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ chmod u+x text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ chmod go-rw text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ ls -l
+total 4
+-rwx------ 1 b4ll3r1um b4ll3r1um 37 апр 23 18:22 text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ cat text
+First string
+Second STRING
+Third one
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ echo 4th string >> text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ ./text
+./text: line 1: First: command not found
+./text: line 2: Second: command not found
+./text: line 3: Third: command not found
+./text: line 4: 4th: command not found
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ chmod u-rwx text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ chmod g+rwx
+chmod: missing operand after ‘g+rwx’
+Try 'chmod --help' for more information.
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ chmod g+rwx text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ ls -l
+total 4
+----rwx--- 1 b4ll3r1um b4ll3r1um 48 апр 23 18:27 text
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ cat text
+cat: text: Permission denied
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ echo String 5 >> text
+bash: text: Permission denied
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ ./text
+bash: ./text: Permission denied
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.3$ 

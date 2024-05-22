@@ -1,0 +1,11 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ ./client 10.0.2.15
+Send a message (type empty string to quit)
+> NETWORK METHOD
+Server feedback: NETWORK METHOD
+> QWERTYASDFGHZXCVBN
+Server feedback: QWERTYASDFGHZXCVBN
+> adadadadaa12315346
+Server feedback: adadadadaa12315346
+> 
+Shutting down...
+b4ll3r1um@Linex:~/Labs_OS/LR6/15$ 

@@ -1,0 +1,25 @@
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ cat *.c > file.txt & sleep 50 & ps -s &
+[1] 6924
+[2] 6925
+[3] 6926
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$   UID     PID   PENDING   BLOCKED   IGNORED    CAUGHT STAT TTY        TIME COMMAND
+ 1000    3227  00000000  00000000  00001000 <00014000 Ssl+ tty2       0:00 /usr/
+ 1000    3236  00000000  00000000  00001000 <00004002 Sl+  tty2       0:00 /usr/
+ 1000    4571  00000000  00000000  00384004  4b813efb Ss+  pts/0      0:00 bash
+ 1000    6925  00000000  00000000  00000000  00000000 S    pts/0      0:00 sleep
+ 1000    6926  00000000  00000000  00000000  73d1fef9 R    pts/0      0:00 ps -s
+jobs
+[1]   Done                    cat *.c > file.txt
+[2]-  Running                 sleep 50 &
+[3]+  Done                    ps -s
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ notify %2
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ jobs
+[2]+  Running                 sleep 50 &
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ fg %2
+sleep 50
+      
+kill %2
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ 
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ kill %2
+bash: kill: %2: no such job
+b4ll3r1um@Linex:~/Labs_OS/LR4/13_2 (Сигналы, команда kill)/13_2.2$ 

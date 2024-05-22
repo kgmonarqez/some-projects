@@ -1,0 +1,6 @@
+Current pid: 49795
+Parent's variable: 100
+Program done!
+Current pid: 0
+Son's variable: 0
+Program done!

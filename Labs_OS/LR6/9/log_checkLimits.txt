@@ -1,0 +1,4 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ ./check
+OPEN_MAX: 1024
+PIPE_BUF: 4096
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ 

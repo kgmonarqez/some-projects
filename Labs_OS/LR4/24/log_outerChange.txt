@@ -1,0 +1,41 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/24$ ./outerChange &
+[1] 49994
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/24$ Process has priority 0
+Started thread with pause 1; it has priority 1
+Started thread with pause 2; it has priority 2
+Started thread with pause 3; it has priority 3
+Started thread with pause 4; it has priority 4
+Started thread with pause 5; it has priority 5
+Started thread with pause 6; it has priority 6
+Started thread with pause 7; it has priority 7
+Started thread with pause 8; it has priority 8
+Started thread with pause 9; it has priority 9
+Started thread with pause 10; it has priority 10
+s -eLo pid,tid,rtprio,ni,comm | grep outerChange
+  21813   21813      -   0 outerChange
+  21813   21814      -   0 outerChange
+  21813   21815      -   0 outerChange
+  21813   21816      -   0 outerChange
+  21813   21817      -   0 outerChange
+  21813   21818      -   0 outerChange
+  21813   21819      -   0 outerChange
+  21813   21820      -   0 outerChange
+  21813   21821      -   0 outerChange
+  21813   21822      -   0 outerChange
+  21813   21823      -   0 outerChange
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/23$ sudo chrt -r -p 40 21814
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/23$ sudo chrt -r -p 40 21815
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/23$ sudo chrt -r -p 40 21816
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/23$ sudo chrt -r -p 40 21817
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/23$ ps -eLo pid,tid,rtprio,ni,comm | grep outerChange
+  21813   21813     40   - outerChange
+  21813   21814     40   - outerChange
+  21813   21815     40   - outerChange
+  21813   21816     40   - outerChange
+  21813   21817     40   - outerChange
+  21813   21818      -   0 outerChange
+  21813   21819      -   0 outerChange
+  21813   21820      -   0 outerChange
+  21813   21821      -   0 outerChange
+  21813   21822      -   0 outerChange
+  21813   21823      -   0 outerChange

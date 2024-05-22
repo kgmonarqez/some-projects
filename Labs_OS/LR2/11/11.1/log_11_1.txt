@@ -1,0 +1,27 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/11$ df -T
+Filesystem     Type    1K-blocks     Used Available Use% Mounted on
+tmpfs          tmpfs     1092888     1572   1091316   1% /run
+/dev/sda3      ext4     25106692 12305080  11500928  52% /
+tmpfs          tmpfs     5464420        0   5464420   0% /dev/shm
+tmpfs          tmpfs        5120        4      5116   1% /run/lock
+/dev/sda2      vfat       524252     6220    518032   2% /boot/efi
+tmpfs          tmpfs     1092884      156   1092728   1% /run/user/1000
+/dev/sr0       iso9660     52274    52274         0 100% /media/b4ll3r1um/VBox_GAs_7.0.16
+b4ll3r1um@Linex:~/Labs_OS/LR2/11$ lsblk -f
+NAME   FSTYPE   FSVER            LABEL           UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+loop0  squashfs 4.0                                                                         0   100% /snap/core22/1122
+loop1  squashfs 4.0                                                                         0   100% /snap/firefox/3836
+loop2  squashfs 4.0                                                                         0   100% /snap/bare/5
+loop3  squashfs 4.0                                                                         0   100% /snap/gnome-42-2204/141
+loop4  squashfs 4.0                                                                         0   100% /snap/gtk-common-themes/1535
+loop5  squashfs 4.0                                                                         0   100% /snap/snap-store/959
+loop6  squashfs 4.0                                                                         0   100% /snap/snapd/20671
+loop7  squashfs 4.0                                                                         0   100% /snap/snapd-desktop-integration/83
+loop8                                                                                       0   100% /snap/core22/1380
+sda                                                                                                  
+├─sda1                                                                                               
+├─sda2 vfat     FAT32                            C36A-18E1                             505,9M     1% /boot/efi
+└─sda3 ext4     1.0                              a3ff2ece-d5c3-4413-b2e0-38bc4fc46754     11G    49% /var/snap/firefox/common/host-hunspell
+                                                                                                     /
+sr0    iso9660  Joliet Extension VBox_GAs_7.0.16 2024-04-12-17-58-47-24                     0   100% /media/b4ll3r1um/VBox_GAs_7.0.16
+b4ll3r1um@Linex:~/Labs_OS/LR2/11$ 

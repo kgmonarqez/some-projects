@@ -1,0 +1,12 @@
+   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   3763    3794    3794    3794 pts/0       4716 Ss    1000   0:00      \_ bash
+   3794    4716    4716    3794 pts/0       4716 S+    1000   0:00          \_ ./father res.txt
+   4716    4717    4716    3794 pts/0       4716 S+    1000   0:00              \_ son_a res.txt
+   4716    4718    4716    3794 pts/0       4716 S+    1000   0:00              \_ son_b res.txt
+   4716    4719    4716    3794 pts/0       4716 Z+    1000   0:00              \_ [son_c] <defunct>
+   4716    4720    4716    3794 pts/0       4716 S+    1000   0:00              \_ sh -c ps xjf | grep "STAT\|4716" > res.txt
+   4720    4721    4716    3794 pts/0       4716 R+    1000   0:00                  \_ ps xjf
+   4720    4722    4716    3794 pts/0       4716 S+    1000   0:00                  \_ grep STAT\|4716
+   1631    4718    4716    3794 pts/0       3794 S     1000   0:00  \_ son_b res.txt
+   4718    4732    4716    3794 pts/0       3794 S     1000   0:00      \_ sh -c ps xjf | grep son_b >> res.txt
+   4732    4734    4716    3794 pts/0       3794 S     1000   0:00          \_ grep son_b

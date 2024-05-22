@@ -1,0 +1,26 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/2$ ./src
+Current pid: 52021
+Step = 0, parent's cycle with pid: 52021
+Step = 1, parent's cycle with pid: 52021
+Step = 2, parent's cycle with pid: 52021
+Step = 3, parent's cycle with pid: 52021
+Step = 4, parent's cycle with pid: 52021
+Step = 5, parent's cycle with pid: 52021
+Step = 6, parent's cycle with pid: 52021
+Step = 7, parent's cycle with pid: 52021
+Step = 8, parent's cycle with pid: 52021
+Step = 9, parent's cycle with pid: 52021
+Program with pid 52021 done!
+Current pid: 0
+Step = 0, son's cycle with pid: 0
+Step = 1, son's cycle with pid: 0
+Step = 2, son's cycle with pid: 0
+Step = 3, son's cycle with pid: 0
+Step = 4, son's cycle with pid: 0
+Step = 5, son's cycle with pid: 0
+Step = 6, son's cycle with pid: 0
+Step = 7, son's cycle with pid: 0
+Step = 8, son's cycle with pid: 0
+Step = 9, son's cycle with pid: 0
+Program with pid 0 done!
+

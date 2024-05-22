@@ -1,0 +1,19 @@
+Active processes:
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    3794    3763  0  80   0 -  2958 do_wai pts/0    00:00:00 bash
+0 S  1000    4737    3794  0  80   0 -   661 do_wai pts/0    00:00:00 father
+0 S  1000    4738    4737  0  80   0 -   661 hrtime pts/0    00:00:00 son1
+0 S  1000    4739    4737  0  80   0 -   661 hrtime pts/0    00:00:00 son2
+0 S  1000    4740    4737  0  80   0 -   661 hrtime pts/0    00:00:00 son3
+0 S  1000    4741    4737  0  80   0 -   723 do_wai pts/0    00:00:00 sh
+0 R  1000    4742    4741  0  80   0 -  3178 -      pts/0    00:00:00 ps
+
+Proceses after sending signal:
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    3794    3763  0  80   0 -  2958 do_wai pts/0    00:00:00 bash
+0 S  1000    4737    3794  0  80   0 -   661 do_wai pts/0    00:00:00 father
+0 Z  1000    4738    4737  0  80   0 -     0 -      pts/0    00:00:00 son1 <defunct>
+0 S  1000    4739    4737  0  80   0 -   661 hrtime pts/0    00:00:00 son2
+0 Z  1000    4740    4737  0  80   0 -     0 -      pts/0    00:00:00 son3 <defunct>
+0 S  1000    4743    4737  0  80   0 -   723 do_wai pts/0    00:00:00 sh
+0 R  1000    4744    4743  0  80   0 -  3178 -      pts/0    00:00:00 ps

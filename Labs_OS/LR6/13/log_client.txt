@@ -1,0 +1,10 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/13$ ./client 10.0.2.15
+Using default port: 8888
+	IP: 10.0.2.15
+	Port: 8888
+Connected to server.
+Enter message: network experiment succeded!
+Received message: OK
+Enter message: 
+Shutting down...
+b4ll3r1um@Linex:~/Labs_OS/LR6/13$ 

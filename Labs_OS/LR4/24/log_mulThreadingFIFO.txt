@@ -1,0 +1,24 @@
+b4ll3r1um@Linex:~/Labs_OS/LR4/24$ sudo ./FIFO
+sudo: /etc/sudoers: Not a directory
+Process has priority 2
+Started thread with pause 1; it has priority 2
+Finished thread with pause 1; time 1079558
+Started thread with pause 2; it has priority 2
+Finished thread with pause 2; time 1080535
+Started thread with pause 3; it has priority 2
+Finished thread with pause 3; time 1051151
+Started thread with pause 4; it has priority 2
+Finished thread with pause 4; time 1054524
+Started thread with pause 5; it has priority 2
+Finished thread with pause 5; time 1064322
+Started thread with pause 6; it has priority 2
+Finished thread with pause 6; time 1037873
+Started thread with pause 7; it has priority 2
+Finished thread with pause 7; time 1071328
+Started thread with pause 8; it has priority 2
+Finished thread with pause 8; time 1041790
+Started thread with pause 9; it has priority 2
+Finished thread with pause 9; time 1115939
+Started thread with pause 10; it has priority 2
+Finished thread with pause 10; time 1055655
+b4ll3r1um@Linex:~/Labs_OS/LR4/24$ 

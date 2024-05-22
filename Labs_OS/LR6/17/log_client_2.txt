@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/17$ ./client
+Default file-key: key
+Adding 0 to cell 0
+Adding 1 to cell 1
+Adding 2 to cell 2
+Adding 3 to cell 3
+Adding 4 to cell 4
+Adding 5 to cell 1
+Adding 6 to cell 1
+Adding 7 to cell 2
+Adding 8 to cell 3
+Adding 9 to cell 4
+b4ll3r1um@Linex:~/Labs_OS/LR6/17$ 

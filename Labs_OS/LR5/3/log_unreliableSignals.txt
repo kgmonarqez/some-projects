@@ -1,0 +1,21 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/3$ ./unreliable
+SIGUSR1: 1
+SIGUSR1: 2
+SIGUSR1: 3
+	SIGINT: 1
+	SIGINT: 2
+	SIGINT: 3
+	SIGINT: 4
+	SIGINT: 5
+	SIGINT: 6
+	SIGINT: 7
+	SIGINT: 8
+	SIGINT: 9
+	SIGINT: 10
+SIGUSR1: 4
+SIGUSR1: 5
+SIGUSR1: 6
+SIGUSR1: 7
+SIGQUIT sent
+Quit (core dumped)
+b4ll3r1um@Linex:~/Labs_OS/LR5/3$ 

@@ -1,0 +1,8 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ ./src
+Signal with number 10
+Signal with number 12
+Signal with number 3
+Signal with number 2
+Signal with number 31
+Killed
+b4ll3r1um@Linex:~/Labs_OS/LR5/1$ 

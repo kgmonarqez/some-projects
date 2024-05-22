@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$ tty
+/dev/pts/2
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$ ./client
+Using default IP adress: 127.0.0.1
+Using default port: 8888
+	IP: 127.0.0.1
+	Port: 8888
+Connected to server.
+Enter message: Hello from client 2
+Received message: OK
+Enter message: 
+Shutting down...
+b4ll3r1um@Linex:~/Labs_OS/LR6/12$

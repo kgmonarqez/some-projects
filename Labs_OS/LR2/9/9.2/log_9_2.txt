@@ -1,0 +1,11 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ ls -l file
+-rw-rw-r-- 1 b4ll3r1um b4ll3r1um 0 апр 23 18:17 file
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ chmod u+s file
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ ls -l
+total 0
+-rwSrw-r-- 1 b4ll3r1um b4ll3r1um 0 апр 23 18:17 file
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ chmod u+x file
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ ls -l
+total 0
+-rwsrw-r-- 1 b4ll3r1um b4ll3r1um 0 апр 23 18:17 file
+b4ll3r1um@Linex:~/Labs_OS/LR2/9/9.2$ 

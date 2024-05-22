@@ -1,0 +1,18 @@
+b4ll3r1um@Linex:~/Labs_OS/LR5/5$ ./order
+pid 22586's current affinity mask: ff
+pid 22586's new affinity mask: 1
+SIGUSR1 caught
+SIGUSR1 processed
+Signal caught: SIGINT
+Signal caught: SIGQUIT
+Signal caught: SIGUSR2
+Signal caught: SIGRTMIN
+Signal caught: SIGRTMIN+1
+Signal caught: SIGRTMIN+1
+Signal caught: SIGRTMIN+2
+Signal caught: SIGRTMIN+2
+Signal caught: SIGRTMIN+2
+Signal caught: SIGRTMIN+3
+Signal caught: SIGRTMIN+4
+Signal caught: SIGRTMIN+5
+b4ll3r1um@Linex:~/Labs_OS/LR5/5$ 

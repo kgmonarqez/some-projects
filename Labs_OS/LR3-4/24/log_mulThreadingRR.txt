@@ -1,0 +1,22 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/24$ ./RR
+Process has priority 0
+Started thread with pause 1; it has priority 0
+Started thread with pause 2; it has priority 0
+Started thread with pause 3; it has priority 0
+Started thread with pause 4; it has priority 0
+Started thread with pause 5; it has priority 0
+Started thread with pause 6; it has priority 0
+Started thread with pause 7; it has priority 0
+Started thread with pause 8; it has priority 0
+Started thread with pause 9; it has priority 0
+Started thread with pause 10; it has priority 0
+Finished thread with pause 5; time 4320512
+Finished thread with pause 7; time 4390184
+Finished thread with pause 6; time 4396037
+Finished thread with pause 4; time 4422849
+Finished thread with pause 3; time 4664566
+Finished thread with pause 10; time 4706031
+Finished thread with pause 1; time 5347721
+Finished thread with pause 8; time 5349406
+Finished thread with pause 9; time 5358655
+Finished thread with pause 2; time 5360957

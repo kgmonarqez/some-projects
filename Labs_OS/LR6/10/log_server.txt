@@ -1,0 +1,13 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$ tty
+/dev/pts/0
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$ ./server
+Using default key file key
+Queue created
+Waiting for any messages...
+New message from client: Linux
+New message from client: qwertyuioasdfghjkl
+New message from client: AAAABBBBCCCC
+New message from client: ZXC
+^CError while receiving message
+
+b4ll3r1um@Linex:~/Labs_OS/LR6/10$

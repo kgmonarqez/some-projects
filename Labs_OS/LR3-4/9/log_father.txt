@@ -1,0 +1,22 @@
+
+ Son parameters was: pid=55457, ppid=55455
+
+ Son parameters was: pid=55458, ppid=55455
+
+ Son parameters was: pid=55460, ppid=55455
+
+ Son parameters was: pid=55459, ppid=55455
+
+ Son parameters was: pid=55461, ppid=55455
+
+Father parameters was: pid=55455 ppid=35739
+
+1) Child proccess with pid = 55457 is finished with status 0
+
+2) Child proccess with pid = 55458 is finished with status 256
+
+3) Child proccess with pid = 55459 is finished with status 65280
+
+4) Child proccess with pid = 55460 is finished with status 1280
+
+5) Child proccess with pid = 55461 is finished with status 62976

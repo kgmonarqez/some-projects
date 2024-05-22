@@ -1,0 +1,4 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ gcc -o src code.c
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~/Labs_OS/LR3-4/15$ ./src
+Минимальный приоритет: -20
+Максимальный приоритет: 20

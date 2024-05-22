@@ -1,0 +1,69 @@
+b4ll3r1um@Linex:~/Labs_OS/LR2/6$ od $(logname)
+0000000 064124 071551 063040 066151 020145 060556 062555 064440
+0000020 020163 032142 066154 071063 072461 005155 064514 072556
+0000040 020170 064514 062556 020170 027066 027065 026460 033462
+0000060 063455 067145 071145 061551 021440 034062 031176 027062
+0000100 032060 030456 052455 072542 072156 020165 046523 020120
+0000120 051120 042505 050115 057524 054504 040516 044515 020103
+0000140 071106 020151 060515 020162 032461 030440 035060 030465
+0000160 030072 020066 052125 020103 020062 034170 057466 032066
+0000200 074040 033070 033137 020064 034170 057466 032066 043440
+0000220 052516 046057 067151 074165 000012
+0000231
+b4ll3r1um@Linex:~/Labs_OS/LR2/6$ od -c $(logname)
+0000000   T   h   i   s       f   i   l   e       n   a   m   e       i
+0000020   s       b   4   l   l   3   r   1   u   m  \n   L   i   n   u
+0000040   x       L   i   n   e   x       6   .   5   .   0   -   2   7
+0000060   -   g   e   n   e   r   i   c       #   2   8   ~   2   2   .
+0000100   0   4   .   1   -   U   b   u   n   t   u       S   M   P    
+0000120   P   R   E   E   M   P   T   _   D   Y   N   A   M   I   C    
+0000140   F   r   i       M   a   r       1   5       1   0   :   5   1
+0000160   :   0   6       U   T   C       2       x   8   6   _   6   4
+0000200       x   8   6   _   6   4       x   8   6   _   6   4       G
+0000220   N   U   /   L   i   n   u   x  \n
+0000231
+b4ll3r1um@Linex:~/Labs_OS/LR2/6$ sudo dump -0u /
+sudo: /etc/sudoers: Not a directory
+  DUMP: Date of this level 0 dump: Tue Apr 23 17:29:54 2024
+  DUMP: Dumping /dev/sda3 (/) to /dev/tape
+  DUMP: Label: none
+  DUMP: Writing 10 Kilobyte records
+  DUMP: mapping (Pass I) [regular files]
+  DUMP: mapping (Pass II) [directories]
+  DUMP: estimated 12356378 blocks.
+  DUMP: Volume 1 started with block 1 at: Tue Apr 23 17:29:55 2024
+  DUMP: dumping (Pass III) [directories]
+  DUMP: dumping (Pass IV) [regular files]
+  DUMP: End of tape detected
+  DUMP: Closing /dev/tape
+  DUMP: Volume 1 completed at: Tue Apr 23 17:30:27 2024
+  DUMP: Volume 1 5426160 blocks (5298.98MB)
+  DUMP: Volume 1 took 0:00:32
+  DUMP: Volume 1 transfer rate: 169566 kB/s
+  DUMP: Change Volumes: Mount volume #2
+  DUMP: Is the new volume mounted and ready to go?: ("yes" or "no") yes
+  DUMP: Volume 2 started with block 5426131 at: Tue Apr 23 17:32:37 2024
+  DUMP: Volume 2 begins with blocks from inode 682693
+  DUMP: End of tape detected
+  DUMP: Closing /dev/tape
+  DUMP: Volume 2 completed at: Tue Apr 23 17:32:58 2024
+  DUMP: Volume 2 5426159 blocks (5298.98MB)
+  DUMP: Volume 2 took 0:00:21
+  DUMP: Volume 2 transfer rate: 258387 kB/s
+  DUMP: Change Volumes: Mount volume #3
+  DUMP: Is the new volume mounted and ready to go?: ("yes" or "no") yes
+  DUMP: Volume 3 started with block 10852260 at: Tue Apr 23 17:33:01 2024
+  DUMP: Volume 3 begins with blocks from inode 1207751
+  DUMP: Closing /dev/tape
+  DUMP: Volume 3 completed at: Tue Apr 23 17:33:08 2024
+  DUMP: Volume 3 1510231 blocks (1474.83MB)
+  DUMP: Volume 3 took 0:00:07
+  DUMP: Volume 3 transfer rate: 215747 kB/s
+  DUMP: 12362490 blocks (12072.74MB) on 3 volume(s)
+  DUMP: finished in 60 seconds, throughput 206041 kBytes/sec
+  DUMP: Date of this level 0 dump: Tue Apr 23 17:29:54 2024
+  DUMP: Date this dump completed:  Tue Apr 23 17:33:08 2024
+  DUMP: Average transfer rate: 214566 kB/s
+  DUMP: DUMP IS DONE
+b4ll3r1um@Linex:~/Labs_OS/LR2/6$ 
+

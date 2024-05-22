@@ -1,0 +1,6 @@
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~$ nohup sleep 40 &
+[1] 9544
+b4ll3r1um@b4ll3r1um-MaiBook-X-series:~$ nohup: ввод игнорируется, вывод добавляется в 'nohup.out'
+ps xa | grep sleep
+   9544 pts/0    S      0:00 sleep 40
+   9546 pts/0    S+     0:00 grep --color=auto sleep

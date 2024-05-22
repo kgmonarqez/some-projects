@@ -1,0 +1,15 @@
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ tty
+/dev/pts/0
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ ./server
+Server output channel created
+Server input channel created
+Server output channel opened
+Server input channel opened
+
+-----Client's info-----
+Computer science, 
+the study of computers and computing, 
+including their theoretical and algorithmic foundations, 
+hardware and software, 
+and their uses for processing information. 
+b4ll3r1um@Linex:~/Labs_OS/LR6/9$ 
