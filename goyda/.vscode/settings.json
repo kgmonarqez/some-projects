@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "cmd.h": "c",
+        "typeinfo": "c",
+        "databaseediting.h": "c",
+        "databaseio.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "caesarciphr.h": "c",
+        "stdio.h": "c"
+    }
+}
