@@ -24,21 +24,16 @@ int main(int argc, char** argv){
         if(op == CMD_EXIT){
             break;
         }
-        printf(">");
-        command = readSTDIN();
-        int length = strlen(command);
-        char* ptr = strtok(command, " ");
         
-        op = menu(ptr);
-        if(op != CMD_NONE){
-            system("clear"); 
-        }
+        command = readSTDIN(">");
+        int length = strlen(command);
+        op = menu(command);
+        
         switch(op){
             case CMD_OPEN:
                 if(MDB.movieList && isEdited){
                     if(askForSaving()){
-                        printf("File name: ");
-                        fileName = readSTDIN();
+                        fileName = readSTDIN("File name: ");
                         if(!strlen(fileName)){
                             free(fileName);
                             saveDB(MDB, sourceName);
@@ -55,15 +50,16 @@ int main(int argc, char** argv){
                     MDB.n = 0;
                 }
 
-                sourceName = strtok(NULL, " ");
+                sourceName = readSTDIN("File name: ");
+                system("clear");
                 MDB = readDB(sourceName);
                 if(MDB.movieList){
                     isEdited = 0;
                 }
                 break;
             case CMD_SAVE:
-                printf("File name: ");
-                fileName = readSTDIN();
+                fileName = readSTDIN("Leave file name field empty to overwrite opened file\nFile name: ");
+                system("clear");
                 if(!strlen(fileName)){
                     free(fileName);
                     saveDB(MDB, sourceName);
@@ -74,44 +70,70 @@ int main(int argc, char** argv){
                 }
                 break;
             case CMD_SHOW:
+                system("clear");
                 printDB(MDB);
                 break;
             case CMD_EDIT:
-                if((n = extractNum()) < 0){
+                if(!MDB.n){
+                    system("clear");
+                    puts("Empty data base");
                     break;
                 }
-                dt = defineDataType(strtok(NULL, " "));
-                data = strtok(NULL, " ");
-                data = recoverFromStrtok(data, (length - (data - command)) / sizeof(char));
+
+                while((n = extractNum(readSTDIN("Movie №: "))) < 0 || n >= MDB.n){
+                    if(n < 0){
+                        puts("Movie number must be a positive integer");
+                    }
+                    else if(n >= MDB.n){
+                        puts("Movie number is higher than actual size of the data base");
+                    }
+                }
+
+                while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
+                
+                while(!strlen(data = readSTDIN("New data: "))){
+                    puts("Please type any data");
+                }
+
+                system("clear");
                 editMovie(&MDB, n, dt, data);
                 break;
             case CMD_ADD:
-                data = strtok(NULL, " ");
-                data = recoverFromStrtok(data, (length  - (data - command)) / sizeof(char));
-                addMovie(&MDB, data);
+                addMovie(&MDB, initMovie());
+                system("clear");
+                puts("Movie added");
                 break;
             case CMD_POP:
-                if((n = extractNum()) < 0){
+                if(!MDB.n){
+                    system("clear");
+                    puts("Empty data base");
                     break;
                 }
+
+                while((n = extractNum(readSTDIN("Movie №: "))) < 0);
                 popMovie(&MDB, n);
+                system("clear");
+                printf("Movie №%d removed", n);
                 break;
             case CMD_SORT:
-                dt = defineDataType(strtok(NULL, " "));
-                so = defineSortingOrder(strtok(NULL, " "));
+                while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
+                so = defineSortingOrder(readSTDIN("Sorting order (+/-): "));
                 sortList(&MDB, dt, so);
+                system("clear");
+                puts("Data base is sorted");
                 break;
             case CMD_SEARCH:
-                dt = defineDataType(strtok(NULL, " "));
-                data = strtok(NULL, " ");
-                data = recoverFromStrtok(data, (length  - (data - command)) / sizeof(char));
+                while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
+                while(!strlen(data = readSTDIN("New data: "))){
+                    puts("Please type any data");
+                }
+                system("clear");
                 searchMovies(&MDB, dt, data);
                 break;
             case CMD_EXIT:
                 if(MDB.movieList && isEdited){
                     if(askForSaving()){
-                        printf("File name: ");
-                        fileName = readSTDIN();
+                        fileName = readSTDIN("Leave file name field empty to overwrite opened file\nFile name: ");
                         if(!strlen(fileName)){
                             free(fileName);
                             saveDB(MDB, sourceName);
@@ -124,10 +146,11 @@ int main(int argc, char** argv){
                 }
                 break;
             case CMD_HELP:
+                system("clear");
                 printHelp();
                 break;
             case CMD_STAT:
-                dt = defineDataType(strtok(NULL, " "));
+                while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
                 showStatistics(MDB, dt);
                 break;
             default:

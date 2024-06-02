@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 #define DB_SIZE 5
-#define STRING_SIZE 10
+#define STRING_SIZE 100
 #define DB_DELIM '/'
 #define DB_ELEMENT_SIZE 5
 
@@ -49,12 +49,11 @@ typedef struct MoviesDataBase{
     int n;
 } MoviesDataBase;
 
-char* readSTDIN();
+char* readSTDIN(char* message);
 operation menu(char* command);
 dataTypes defineDataType(char* dt);
 sortingOrder defineSortingOrder(char* so);
-char* recoverFromStrtok(char* str, int n);
 int checkIsNum(char* str);
-int extractNum();
+int extractNum(char* data);
 void printHelp();
 int askForSaving();
