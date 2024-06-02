@@ -32,60 +32,42 @@ void editMovie(MoviesDataBase* MDB, int n, dataTypes dataType, char* newData){
                 }
                 break;
             case YEAR:
-                if(checkIsNum(newData)){
-                    if(MDB->movieList[n].year){
-                        free(MDB->movieList[n].year);
-                    }
-                    MDB->movieList[n].year = malloc(sizeof(char) * strlen(newData));
-                    if(MDB->movieList[n].year){
-                        strcpy(MDB->movieList[n].year, newData);
-                    }
-                    else{
-                        perror("Dynamic memory err");
-                        exit(1);
-                    }
+                if(MDB->movieList[n].year){
+                    free(MDB->movieList[n].year);
+                }
+                MDB->movieList[n].year = malloc(sizeof(char) * strlen(newData));
+                if(MDB->movieList[n].year){
+                    strcpy(MDB->movieList[n].year, newData);
                 }
                 else{
-                    puts("Year parameter must be an integer");
-                    return;
+                    perror("Dynamic memory err");
+                    exit(1);
                 }
                 break;
             case COPIES:
-                if(checkIsNum(newData)){
-                    if(MDB->movieList[n].copiesCount){
-                        free(MDB->movieList[n].copiesCount);
-                    }
-                    MDB->movieList[n].copiesCount = malloc(sizeof(char) * strlen(newData));
-                    if(MDB->movieList[n].copiesCount){
-                        strcpy(MDB->movieList[n].copiesCount, newData);
-                    }
-                    else{
-                        perror("Dynamic memory err");
-                        exit(1);
-                    }
+                if(MDB->movieList[n].copiesCount){
+                    free(MDB->movieList[n].copiesCount);
+                }
+                MDB->movieList[n].copiesCount = malloc(sizeof(char) * strlen(newData));
+                if(MDB->movieList[n].copiesCount){
+                    strcpy(MDB->movieList[n].copiesCount, newData);
                 }
                 else{
-                    puts("Copies parameter must be an integer");
-                    return;
+                    perror("Dynamic memory err");
+                    exit(1);
                 }
                 break;
             case COST:
-                if(checkIsNum(newData)){
-                    if(MDB->movieList[n].cost){
-                        free(MDB->movieList[n].cost);
-                    }
-                    MDB->movieList[n].cost = malloc(sizeof(char) * strlen(newData));
-                    if(MDB->movieList[n].cost){
-                        strcpy(MDB->movieList[n].cost, newData);
-                    }
-                    else{
-                        perror("Dynamic memory err");
-                        exit(1);
-                    }
+                if(MDB->movieList[n].cost){
+                    free(MDB->movieList[n].cost);
+                }
+                MDB->movieList[n].cost = malloc(sizeof(char) * strlen(newData));
+                if(MDB->movieList[n].cost){
+                    strcpy(MDB->movieList[n].cost, newData);
                 }
                 else{
-                    puts("Cost parameter must be an integer");
-                    return;
+                    perror("Dynamic memory err");
+                    exit(1);
                 }
                 break;
             case NONE:
@@ -95,12 +77,9 @@ void editMovie(MoviesDataBase* MDB, int n, dataTypes dataType, char* newData){
         printf("Movie №%d edited\n", n+1);
         isEdited = 1;
     }
-    else{
-        puts("Not enough agruments");
-    }
 }
 
-void addMovie(MoviesDataBase* MDB, char* info){
+void addMovie(MoviesDataBase* MDB, Movie newMovie){
     if(!MDB->movieList){
         MDB->movieList = malloc(sizeof(Movie) * DB_SIZE);
     }
@@ -109,9 +88,51 @@ void addMovie(MoviesDataBase* MDB, char* info){
         MDB->movieList = tmp;
     }
     if(MDB->movieList){
-        MDB->movieList[MDB->n++] = buildMovieStruct(info, MDB->n+1);  
+        newMovie.pos = MDB->n;
+        MDB->movieList[MDB->n++] = newMovie;  
         isEdited = 1;
     }
+}
+
+Movie initMovie(){
+    Movie newMovie = {NULL, NULL, NULL, NULL, NULL, -1};
+    
+    while(!strlen((newMovie.director = readSTDIN("Director: ")))){
+        puts("Please type director data");
+    }
+
+    while(!strlen((newMovie.name = readSTDIN("Name: ")))){
+        puts("Please type name data");
+    }
+
+    while(!strlen((newMovie.year = readSTDIN("Year: "))) || !checkIsNum(newMovie.year)){
+        if(!strlen(newMovie.year)){
+            puts("Please type year data");
+        }
+        else if(!checkIsNum(newMovie.year)){
+            puts("Year data must be an integer");
+        }
+    }
+
+    while(!strlen((newMovie.copiesCount = readSTDIN("Copies: "))) || !checkIsNum(newMovie.copiesCount)){
+        if(!strlen(newMovie.copiesCount)){
+            puts("Please type copies data");
+        }
+        else if(!checkIsNum(newMovie.copiesCount)){
+            puts("Copies data must be an integer");
+        }
+    }
+
+    while(!strlen((newMovie.cost = readSTDIN("Cost: "))) || !checkIsNum(newMovie.cost)){
+        if(!strlen(newMovie.cost)){
+            puts("Please type cost data");
+        }
+        else if(!checkIsNum(newMovie.cost)){
+            puts("Cost data must be an integer");
+        }
+    }
+    
+    return newMovie;
 }
 
 void popMovie(MoviesDataBase* MDB, int n){

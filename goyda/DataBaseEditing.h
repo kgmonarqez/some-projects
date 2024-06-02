@@ -7,7 +7,8 @@
 extern int isEdited;
 
 void editMovie(MoviesDataBase* MDB, int n, dataTypes dataType, char* newData);
-void addMovie(MoviesDataBase* MDB, char* info);
+void addMovie(MoviesDataBase* MDB, Movie newMovie);
+Movie initMovie();
 void popMovie(MoviesDataBase* MDB, int n);
 void sortList(MoviesDataBase* MDB, dataTypes dataType, sortingOrder order);
 void searchMovies(MoviesDataBase* MDB, dataTypes dataType, char* searchingData);

@@ -1,6 +1,9 @@
 #include "cmd.h"
 
-char* readSTDIN(){
+char* readSTDIN(char* message){
+    if(message){
+        printf("%s", message);
+    }
     int size = STRING_SIZE;
     char* command = malloc(sizeof(char) * size);
     int length = 0;
@@ -74,6 +77,7 @@ dataTypes defineDataType(char* dt){
             return COST;
         }
     }
+    puts("Wrong category");
     return NONE;
 }
 
@@ -85,19 +89,11 @@ sortingOrder defineSortingOrder(char* so){
         else if(!strcmp(so, STR_DESCENDING)){
             return DESCENDING;
         }
-    }
-    return ASCENDING;
-}
-
-char* recoverFromStrtok(char* str, int n){
-    if(str){
-        for(int i = 0; i < n; i++){
-            if(*(str + i) == '\0'){
-                *(str + i) = ' ';
-            }
+        else{
+            puts("Wrong sorting type, switched to ascending (+)");
         }
     }
-    return str;
+    return ASCENDING;
 }
 
 int checkIsNum(char* str){
@@ -109,56 +105,44 @@ int checkIsNum(char* str){
     return 1;
 }
 
-int extractNum(){
-    char* data = strtok(NULL, " ");
+int extractNum(char* data){
+    int res = -1;
     if(data && checkIsNum(data)){
-        return atoi(data) - 1;
+        res = atoi(data) - 1;
     }
-    else{
-        puts("Movie number must be an integer");
-        return -1;
-    }
+    free(data);
+    return res;
 }
 
 void printHelp(){
     puts("MDB - Movie's data base manual\n");
     puts("This data base keeps 5 categories of a movie:");
-    puts("\tDirector");
-    puts("\tName");
-    puts("\tYear");
-    puts("\tCopies");
-    puts("\tCost");
+    printf("    %s\n", STR_DIRECTOR);
+    printf("    %s\n", STR_NAME);
+    printf("    %s\n", STR_YEAR);
+    printf("    %s\n", STR_COPIES);
+    printf("    %s\n", STR_COST);
     puts("\nAll the data is editable and can be saved in another file");
-    puts("\n\topen [filename] - opens and reads data base\n");
-    puts("\t\t[filename] - name of the data base file");
-    puts("\n\tsave - saves current data base state in a file. If file name is not written, data is saved in the opened\n");
-    puts("\n\tshow - prints data base in a table format");
-    puts("\n\tedit [n] [dataType] [newData] - edit movie data\n");
-    puts("\t\t[n] - number of a movie in the table");
-    puts("\t\t[dataType] - category of an editable movie");
-    puts("\t\t[newData] - new data to an editable movie");
-    puts("\n\tadd [movieInfo] - adds a new movie in the data base\n");
-    puts("\t\t[movieInfo] - string with a format '[Director] / [Name] / [Year] / [Copies] / [Cost]'. Every not mentioned data will be pointed as None");
-    puts("\n\tremove [n] - delete a movie from the data base\n");
-    puts("\t\t[n] - number of a movie in the table");
-    puts("\n\tsort [dataType] [order] - sort movies by data\n");
-    puts("\t\t[dataType] - category by which data base is sorted");
-    puts("\t\t[order] - order of sorting: '+' for ascending, '-' for descending. Typing command without sorting order sorting it ascendingly");
-    puts("\n\tfind [dataType] [data] - find movies by data\n");
-    puts("\t\t[dataType] - category of a searchable data");
-    puts("\t\t[data] - searched data in the table");
-    puts("\n\tquit - quit the program");
-    puts("\n\thelp - print help info\n");
+    printf("\n\t%s - opens and reads data base\n", STR_OPEN);
+    printf("\n\t%s - saves current data base state in a file\n", STR_SAVE);
+    printf("\n\t%s - prints data base in a table format\n", STR_SHOW);
+    printf("\n\t%s - edit movie data\n", STR_EDIT);
+    printf("\n\t%s - adds a new movie in the data base\n", STR_ADD);
+    printf("\n\t%s - delete a movie from the data base\n", STR_POP);
+    printf("\n\t%s - sort movies by data\n", STR_SORT);
+    printf("\n\t%s - find movies by data\n", STR_SEARCH);
+    printf("\n\t%s - get some mathematical statistics\n", STR_STAT);
+    printf("\n\t%s - quit the program\n", STR_EXIT);
+    printf("\n\t%s - print help info\n", STR_HELP);
 }
 
 int askForSaving(){
-    printf("Changes are not saved\nDo you want to save them? [y, n]: ");
-    char* ans = readSTDIN();
+    char* ans = readSTDIN("Changes are not saved\nDo you want to save them? [y, n]: ");
     while(strcmp(ans, "y") && strcmp(ans, "n")){
         if(ans){
             free(ans);
         }
-        ans = readSTDIN();
+        ans = readSTDIN(NULL);
     }
     if(!strcmp(ans, "n")){
         free(ans);
