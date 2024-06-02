@@ -19,3 +19,4 @@ char* process(char* ptr);
 void saveDB(MoviesDataBase MDB, char* fileName);
 char* caesarDecoder(char* str);
 char* caesarEncoder(char* str);
+char* recoverFromStrtok(char* str, int n);

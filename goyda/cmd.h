@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 #define DB_SIZE 5
-#define STRING_SIZE 100
+#define STRING_SIZE 5
 #define DB_DELIM '/'
 #define DB_ELEMENT_SIZE 5
 
@@ -36,11 +36,11 @@ typedef enum operation {CMD_NONE, CMD_EXIT, CMD_OPEN, CMD_SAVE, CMD_SHOW,
                         CMD_EDIT, CMD_ADD, CMD_POP, CMD_SORT, CMD_SEARCH, CMD_HELP, CMD_STAT} operation;
 
 typedef struct Movie{
-    char* director;
-    char* name;
-    char* year;
-    char* copiesCount;
-    char* cost;
+    char director[STRING_SIZE + 1];
+    char name[STRING_SIZE + 1];
+    char year[STRING_SIZE + 1];
+    char copiesCount[STRING_SIZE + 1];
+    char cost[STRING_SIZE + 1];
     int pos;
 } Movie;
 

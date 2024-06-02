@@ -4,70 +4,39 @@ int isEdited = 0;
 
 void editMovie(MoviesDataBase* MDB, int n, dataTypes dataType, char* newData){
     if(n < MDB->n && MDB->movieList && newData && n >= 0){
+        int length = STRING_SIZE+1;
+        if(strlen(newData)+1 < length){
+            length = strlen(newData)+1;
+        }
         switch(dataType){
             case DIRECTOR:
-                if(MDB->movieList[n].director){
-                    free(MDB->movieList[n].director);
-                }
-                MDB->movieList[n].director = malloc(sizeof(char) * strlen(newData));
-                if(MDB->movieList[n].director){
-                    strcpy(MDB->movieList[n].director, newData);
-                }
-                else{
-                    perror("Dynamic memory err");
-                    exit(1);
+                memmove(MDB->movieList[n].director, newData, length);
+                if(length == STRING_SIZE+1){
+                    MDB->movieList[n].director[STRING_SIZE] = '\0';
                 }
                 break;
             case NAME:
-                if(MDB->movieList[n].name){
-                    free(MDB->movieList[n].name);
-                }
-                MDB->movieList[n].name = malloc(sizeof(char) * strlen(newData));
-                if(MDB->movieList[n].name){
-                    strcpy(MDB->movieList[n].name, newData);
-                }
-                else{
-                    perror("Dynamic memory err");
-                    exit(1);
+                memmove(MDB->movieList[n].name, newData, length);
+                if(length == STRING_SIZE+1){
+                    MDB->movieList[n].name[STRING_SIZE] = '\0';
                 }
                 break;
             case YEAR:
-                if(MDB->movieList[n].year){
-                    free(MDB->movieList[n].year);
-                }
-                MDB->movieList[n].year = malloc(sizeof(char) * strlen(newData));
-                if(MDB->movieList[n].year){
-                    strcpy(MDB->movieList[n].year, newData);
-                }
-                else{
-                    perror("Dynamic memory err");
-                    exit(1);
+                memmove(MDB->movieList[n].year, newData, length);
+                if(length == STRING_SIZE+1){
+                    MDB->movieList[n].year[STRING_SIZE] = '\0';
                 }
                 break;
             case COPIES:
-                if(MDB->movieList[n].copiesCount){
-                    free(MDB->movieList[n].copiesCount);
-                }
-                MDB->movieList[n].copiesCount = malloc(sizeof(char) * strlen(newData));
-                if(MDB->movieList[n].copiesCount){
-                    strcpy(MDB->movieList[n].copiesCount, newData);
-                }
-                else{
-                    perror("Dynamic memory err");
-                    exit(1);
+                memmove(MDB->movieList[n].copiesCount, newData, length);
+                if(length == STRING_SIZE+1){
+                    MDB->movieList[n].copiesCount[STRING_SIZE] = '\0';
                 }
                 break;
             case COST:
-                if(MDB->movieList[n].cost){
-                    free(MDB->movieList[n].cost);
-                }
-                MDB->movieList[n].cost = malloc(sizeof(char) * strlen(newData));
-                if(MDB->movieList[n].cost){
-                    strcpy(MDB->movieList[n].cost, newData);
-                }
-                else{
-                    perror("Dynamic memory err");
-                    exit(1);
+                memmove(MDB->movieList[n].cost, newData, length);
+                if(length == STRING_SIZE+1){
+                    MDB->movieList[n].cost[STRING_SIZE] = '\0';
                 }
                 break;
             case NONE:
@@ -88,49 +57,109 @@ void addMovie(MoviesDataBase* MDB, Movie newMovie){
         MDB->movieList = tmp;
     }
     if(MDB->movieList){
-        newMovie.pos = MDB->n;
+        newMovie.pos = MDB->n+1;
         MDB->movieList[MDB->n++] = newMovie;  
         isEdited = 1;
     }
 }
 
 Movie initMovie(){
-    Movie newMovie = {NULL, NULL, NULL, NULL, NULL, -1};
-    
-    while(!strlen((newMovie.director = readSTDIN("Director: ")))){
+    Movie newMovie;
+
+    int length = STRING_SIZE+1;
+    char* buf = readSTDIN("Director: ");
+    while(!strlen(buf)){
         puts("Please type director data");
+        free(buf);
+        buf = readSTDIN("Director: ");
     }
+    if(strlen(buf)+1 < length){
+        length = strlen(buf)+1;
+    }
+    else{
+        buf[STRING_SIZE] = '\0';
+    }
+    memmove(newMovie.director, buf, length);
+    free(buf);
 
-    while(!strlen((newMovie.name = readSTDIN("Name: ")))){
+    length = STRING_SIZE+1;
+    buf = readSTDIN("Name: ");
+    while(!strlen(buf)){
         puts("Please type name data");
+        free(buf);
+        buf = readSTDIN("Name: ");
     }
+    if(strlen(buf)+1 < length){
+        length = strlen(buf)+1;
+    }
+    else{
+        buf[STRING_SIZE] = '\0';
+    }
+    memmove(newMovie.name, buf, length);
+    free(buf);
 
-    while(!strlen((newMovie.year = readSTDIN("Year: "))) || !checkIsNum(newMovie.year)){
+    length = STRING_SIZE+1;
+    buf = readSTDIN("Year: ");
+    while(!strlen(buf) || !checkIsNum(buf)){
         if(!strlen(newMovie.year)){
             puts("Please type year data");
         }
         else if(!checkIsNum(newMovie.year)){
             puts("Year data must be an integer");
         }
+        free(buf);
+        buf = readSTDIN("Year: ");
     }
+    if(strlen(buf)+1 < length){
+        length = strlen(buf)+1;
+    }
+    else{
+        buf[STRING_SIZE] = '\0';
+    }
+    memmove(newMovie.year, buf, length);
+    free(buf);
 
-    while(!strlen((newMovie.copiesCount = readSTDIN("Copies: "))) || !checkIsNum(newMovie.copiesCount)){
+    length = STRING_SIZE+1;
+    buf = readSTDIN("Copies: ");
+    while(!strlen(buf) || !checkIsNum(buf)){
         if(!strlen(newMovie.copiesCount)){
             puts("Please type copies data");
         }
         else if(!checkIsNum(newMovie.copiesCount)){
             puts("Copies data must be an integer");
         }
+        free(buf);
+        buf = readSTDIN("Copies: ");
     }
+    if(strlen(buf)+1 < length){
+        length = strlen(buf)+1;
+    }
+    else{
+        buf[STRING_SIZE] = '\0';
+    }
+    memmove(newMovie.copiesCount, buf, length);
+    free(buf);
 
-    while(!strlen((newMovie.cost = readSTDIN("Cost: "))) || !checkIsNum(newMovie.cost)){
+    length = STRING_SIZE+1;
+    buf = readSTDIN("Cost: ");
+    while(!strlen(buf) || !checkIsNum(buf)){
         if(!strlen(newMovie.cost)){
             puts("Please type cost data");
         }
         else if(!checkIsNum(newMovie.cost)){
             puts("Cost data must be an integer");
         }
+        free(buf);
+        buf = readSTDIN("Cost: ");
     }
+    if(strlen(buf)+1 < length){
+        length = strlen(buf)+1;
+    }
+    else{
+        buf[STRING_SIZE] = '\0';
+    }
+    memmove(newMovie.cost, buf, length);
+    free(buf);
     
     return newMovie;
 }
@@ -214,28 +243,47 @@ void sortList(MoviesDataBase* MDB, dataTypes dataType, sortingOrder order){
 
 void searchMovies(MoviesDataBase* MDB, dataTypes dataType, char* searchingData){
     if(searchingData){
-        Movie M = {NULL, NULL, NULL, NULL, NULL, -1};
+        Movie M;
+        int length = STRING_SIZE+1;
+        if(strlen(searchingData)+1 < length){
+            length = strlen(searchingData)+1;
+        }
         int(*comparator)(const void*, const void*);   // Указатель на функцию
         switch(dataType){
             case DIRECTOR:
                 comparator = directorComparator;
-                M.director = searchingData;
+                memmove(M.director, searchingData, STRING_SIZE+1);
+                if(length == STRING_SIZE+1){
+                    M.director[STRING_SIZE] = '\0';
+                }
                 break;
             case NAME:
                 comparator = nameComparator;
-                M.name = searchingData;
+                memmove(M.name, searchingData, STRING_SIZE+1);
+                if(length == STRING_SIZE+1){
+                    M.name[STRING_SIZE] = '\0';
+                }
                 break;
             case YEAR:
                 comparator = yearComparator;
-                M.year = searchingData;
+                memmove(M.year, searchingData, STRING_SIZE+1);
+                if(length == STRING_SIZE+1){
+                    M.year[STRING_SIZE] = '\0';
+                }
                 break;
             case COPIES:
                 comparator = copiesCountComparator;
-                M.copiesCount = searchingData;
+                memmove(M.copiesCount, searchingData, STRING_SIZE+1);
+                if(length == STRING_SIZE+1){
+                    M.copiesCount[STRING_SIZE] = '\0';
+                }
                 break;
             case COST:
                 comparator = costComparator;
-                M.cost = searchingData;
+                memmove(M.cost, searchingData, STRING_SIZE+1);
+                if(length == STRING_SIZE+1){
+                    M.cost[STRING_SIZE] = '\0';
+                }
                 break;
             case NONE:
                 puts("Wrong data type");
@@ -250,6 +298,9 @@ void searchMovies(MoviesDataBase* MDB, dataTypes dataType, char* searchingData){
                 if(!comparator(&MDB->movieList[i], &M)){
                     printMovie(MDB->movieList[i]);
                 }
+            }
+            for(int i = 0; i < 97; i++){
+                printf("=");
             }
             puts("");
         }

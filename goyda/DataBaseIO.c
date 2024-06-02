@@ -59,23 +59,73 @@ char* process(char* ptr){
     return "None";
 }
 
+char* recoverFromStrtok(char* str, int n){
+    if(str){
+        for(int i = 0; i < n; i++){
+            if(*(str + i) == '\0'){
+                *(str + i) = ' ';
+            }
+        }
+    }
+    return str;
+}
+
 Movie buildMovieStruct(char* movieString, int pos){
-    Movie currentMovie = {NULL, NULL, NULL, NULL, NULL, pos};
+    Movie currentMovie;
+    int n = strlen(movieString);
 
-    char* ptr = strtok(movieString, "/");
-    currentMovie.director = process(ptr);
-            
-    ptr = strtok(NULL, "/");
-    currentMovie.name = process(ptr);
-        
-    ptr = strtok(NULL, "/");
-    currentMovie.year = process(ptr);
+    int length = STRING_SIZE+1;
+    char* ptr = process(strtok(movieString, "/"));
+    if(strlen(ptr)+1 < length){
+        length = strlen(ptr)+1;
+    }
+    else{
+        ptr[STRING_SIZE] = '\0';
+    }
+    memmove(currentMovie.director, process(ptr), length);
 
-    ptr = strtok(NULL, "/");
-    currentMovie.copiesCount = process(ptr);
-        
-    ptr = strtok(NULL, "/");
-    currentMovie.cost = process(ptr);
+    length = STRING_SIZE+1;        
+    ptr = process(strtok(NULL, "/"));
+    if(strlen(ptr)+1 < length){
+        length = strlen(ptr)+1;
+    }
+    else{
+        ptr[STRING_SIZE] = '\0';
+    }
+    
+    memmove(currentMovie.name, process(ptr), length);
+
+    length = STRING_SIZE+1;
+    ptr = process(strtok(NULL, "/"));
+    if(strlen(ptr)+1 < length){
+        length = strlen(ptr)+1;
+    }
+    else{
+        ptr[STRING_SIZE] = '\0';
+    }
+    memmove(currentMovie.year, process(ptr), length);
+
+    length = STRING_SIZE+1;
+    ptr = process(strtok(NULL, "/"));
+    if(strlen(ptr)+1 < length){
+        length = strlen(ptr)+1;
+    }
+    else{
+        ptr[STRING_SIZE] = '\0';
+    }
+    memmove(currentMovie.copiesCount, process(ptr), length);
+    
+    length = STRING_SIZE+1;
+    ptr = process(strtok(NULL, "/"));
+    if(strlen(ptr)+1 < length){
+        length = strlen(ptr)+1;
+    }
+    else{
+        ptr[STRING_SIZE] = '\0';
+    }
+    memmove(currentMovie.cost, process(ptr), length);
+
+    currentMovie.pos = pos;
     return currentMovie;
 }
 
@@ -100,6 +150,7 @@ MoviesDataBase readDB(char* fileName){
                 }
                 if(movieList){
                     movieList[n++] = buildMovieStruct(movieString, n);
+                    movieString = recoverFromStrtok(movieString, n);
                     free(movieString);
                 }
                 else{

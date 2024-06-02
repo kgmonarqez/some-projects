@@ -113,7 +113,7 @@ int main(int argc, char** argv){
                 while((n = extractNum(readSTDIN("Movie №: "))) < 0);
                 popMovie(&MDB, n);
                 system("clear");
-                printf("Movie №%d removed", n);
+                printf("Movie №%d removed\n", n+1);
                 break;
             case CMD_SORT:
                 while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
@@ -124,7 +124,7 @@ int main(int argc, char** argv){
                 break;
             case CMD_SEARCH:
                 while((dt = defineDataType(readSTDIN("Category: "))) == NONE);
-                while(!strlen(data = readSTDIN("New data: "))){
+                while(!strlen(data = readSTDIN("Searching data: "))){
                     puts("Please type any data");
                 }
                 system("clear");
