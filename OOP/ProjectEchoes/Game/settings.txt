@@ -1,0 +1,6 @@
+InputModel:Terminal
+ControlScheme:Keyboard
+Left:a
+Right:d
+Up:w
+Down:s
